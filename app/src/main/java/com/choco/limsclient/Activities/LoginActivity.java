@@ -21,7 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class MainActivity extends Activity {
+public class LoginActivity extends Activity {
 
 
     EditText edtTxtUsername;
