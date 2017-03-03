@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_6d269c3e542ff5cbb1873fec23985463d1e822cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_26666938c29dae78d72e06c797ded7d76258a803\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_5e2c08b961e55fab2668b081addce6ddbc587861\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_96eedda0411f14f799033b3ea159b37944f2baa4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_450f2d5336979ed43db5c12b14d112c84577f899\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a2407677a392ed4c152630150a2330c6e9c3bf73">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6b542e4d2a1c6b88d9ee3e009086966bd1dea010\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="af5d0b4656e9d4ca45ce5a7a8f3397426e207375">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_64af157b14f6b982d156db00dc3ad32642bfd465\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_f1e3206dab55750d2b8d00ec3ad0b642c626547a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_1d7a21ba45f033ed335ed57327978391d127f83d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_b88783eeac67d490638069385895427d70372486\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_7d04624adfebb7ce14d0f106a0f540f7eacd859e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_87db2db3a58fe3ff1718f8737821282767f0ba6c\classes.dex" />
+    </item>
+
+</items>
