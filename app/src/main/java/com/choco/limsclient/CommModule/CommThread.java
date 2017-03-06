@@ -20,7 +20,7 @@ import com.choco.limsclient.Util.Global;
  */
 
 public class CommThread implements Runnable{
-    private static final CommThread commThread = new CommThread();
+    private static CommThread commThread = null;
     public Handler rcvHandler;
     private Handler handler;
     private InetAddress svrAddress;
@@ -31,6 +31,7 @@ public class CommThread implements Runnable{
 
     private CommThread(){
         try {
+            Log.i("login","create socket");
             svrAddress = InetAddress.getByName(Global.svrAddr);
             socket = new DatagramSocket();
         }catch (Exception e){
@@ -44,6 +45,9 @@ public class CommThread implements Runnable{
     }
 
     public static CommThread getInstance(){
+        if(commThread == null){
+            commThread = new CommThread();
+        }
         Log.i("login","get instance");
         return commThread;
     }
