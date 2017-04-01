@@ -9,6 +9,9 @@ import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
@@ -27,13 +30,14 @@ public class CommThread implements Runnable{
     private DatagramPacket packet;
     private DatagramSocket socket;
     private static final int svrPort = Global.svrPort;
+    private static final int localPort = Global.localPort;
 
 
     private CommThread(){
         try {
             Log.i("login","create socket");
             svrAddress = InetAddress.getByName(Global.svrAddr);
-            socket = new DatagramSocket();
+            socket = new DatagramSocket(localPort);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -55,6 +59,24 @@ public class CommThread implements Runnable{
     public void run(){
         try
         {
+            //启动新线程来读取服务器的数据
+            new Thread(){
+                @Override
+                public void run(){
+                    byte[] data = new byte[Global.MAX_LENGTH];
+                    packet = new DatagramPacket(data,data.length);
+                    try{
+                        socket.receive(packet);
+                        String resp = new String(packet.getData() , packet.getOffset() , packet.getLength());
+                        Message msg = new Message();
+                        msg.what = Global.FROM_COMMTHREAD;
+                        msg.obj = resp;
+                        handler.sendMessage(msg);
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
+                }
+            }.start();
             Looper.prepare();
             Log.i("login","thread start");
             rcvHandler = new Handler(){

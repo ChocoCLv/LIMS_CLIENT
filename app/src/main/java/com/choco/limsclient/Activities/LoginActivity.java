@@ -1,6 +1,7 @@
 package com.choco.limsclient.Activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -8,17 +9,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.choco.limsclient.Activities.Student.MainActivity;
 import com.choco.limsclient.R;
 import com.choco.limsclient.CommModule.*;
 import com.choco.limsclient.Util.Global;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONException;
-
-import java.util.HashMap;
-import java.util.Map;
+import org.json.JSONTokener;
 
 
 public class LoginActivity extends Activity {
@@ -33,30 +33,48 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_login);
         findView();
         comm = CommThread.getInstance();
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 login();
             }
         });
-
         handler = new Handler(){
             @Override
             public void handleMessage(Message msg){
                 if(msg.what== Global.FROM_COMMTHREAD){
-
+                    try {
+                        JSONTokener jsonParser = new JSONTokener(msg.obj.toString());
+                        JSONObject resp =  (JSONObject)jsonParser.nextValue();
+                        String loginResult = resp.getString("LOGIN_STATUS");
+                        if(loginResult.equals("SUCCESS")){
+                            Log.i("login","登录成功");
+                            String userType = resp.getString("USERTYPE");
+                            startNewActivity(userType);
+                        }else if(loginResult.equals("FAILED")){
+                            Log.i("login","登录失败");
+                            Toast.makeText(LoginActivity.this,"Login failed.Please check your username and password",Toast.LENGTH_LONG)
+                                    .show();
+                        }
+                    }catch (JSONException e){
+                        e.printStackTrace();
+                    }
                 }
             }
         };
-
         comm.setHandler(handler);
         new Thread(comm).start();
+    }
 
+    private void startNewActivity(String userType){
+        //HashMap<String,String> userTypeToActivity = new HashMap<>();
+        //userTypeToActivity.put("STUDENT","MainActivity.class");
+        //userTypeToActivity.put("TEACHER","TeacherMainActivity.class");
+        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+        startActivity(intent);
     }
 
     private void login(){
