@@ -13,6 +13,8 @@ import com.google.zxing.integration.android.IntentResult;
 
 import com.choco.limsclient.R;
 
+import java.util.ArrayList;
+
 public class MainActivity extends Activity {
     Button btnBorrowDevice;
     @Override
@@ -37,7 +39,11 @@ public class MainActivity extends Activity {
 
     private void borrowDevice(){
         IntentIntegrator integrator = new IntentIntegrator(MainActivity.this);
-        integrator.initiateScan();
+        ArrayList<String> formats = new ArrayList<>();
+        formats.add("QR_CODE");
+        integrator.setPrompt("test");
+        integrator.setScanningRectangle(600,600);
+        integrator.initiateScan(formats);
     }
 
     @Override
@@ -47,6 +53,8 @@ public class MainActivity extends Activity {
             String result = scanResult.getContents();
             Log.d("code", result);
             Toast.makeText(this,result, Toast.LENGTH_LONG).show();
+        }else{
+            super.onActivityResult(requestCode,resultCode,data);
         }
     }
 }

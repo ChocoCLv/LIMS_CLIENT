@@ -2,6 +2,7 @@ package com.choco.limsclient.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -19,6 +20,8 @@ import com.choco.limsclient.Util.Global;
 import org.json.JSONObject;
 import org.json.JSONException;
 import org.json.JSONTokener;
+
+import java.util.HashMap;
 
 
 public class LoginActivity extends Activity {
@@ -39,9 +42,11 @@ public class LoginActivity extends Activity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                login();
+                //login();
+                startNewActivity("STUDENT");
             }
         });
+
         handler = new Handler(){
             @Override
             public void handleMessage(Message msg){
@@ -70,11 +75,15 @@ public class LoginActivity extends Activity {
     }
 
     private void startNewActivity(String userType){
-        //HashMap<String,String> userTypeToActivity = new HashMap<>();
-        //userTypeToActivity.put("STUDENT","MainActivity.class");
-        //userTypeToActivity.put("TEACHER","TeacherMainActivity.class");
-        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-        startActivity(intent);
+        HashMap<String,String> userTypeToActivity = new HashMap<>();
+        userTypeToActivity.put("STUDENT","com.choco.limsclient.Activities.Student.MainActivity");
+        userTypeToActivity.put("TEACHER","com.choco.limsclient.Activities.Teacher.MainActivity");
+        try{
+            Intent intent = new Intent(LoginActivity.this,Class.forName(userTypeToActivity.get(userType)));
+            startActivity(intent);
+        }catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
     }
 
     private void login(){

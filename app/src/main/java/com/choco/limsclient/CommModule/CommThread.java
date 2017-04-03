@@ -65,15 +65,17 @@ public class CommThread implements Runnable{
                 public void run(){
                     byte[] data = new byte[Global.MAX_LENGTH];
                     packet = new DatagramPacket(data,data.length);
-                    try{
-                        socket.receive(packet);
-                        String resp = new String(packet.getData() , packet.getOffset() , packet.getLength());
-                        Message msg = new Message();
-                        msg.what = Global.FROM_COMMTHREAD;
-                        msg.obj = resp;
-                        handler.sendMessage(msg);
-                    }catch (IOException e){
-                        e.printStackTrace();
+                    while(true){
+                        try{
+                            socket.receive(packet);
+                            String resp = new String(packet.getData() , packet.getOffset() , packet.getLength());
+                            Message msg = new Message();
+                            msg.what = Global.FROM_COMMTHREAD;
+                            msg.obj = resp;
+                            handler.sendMessage(msg);
+                        }catch (IOException e){
+                            e.printStackTrace();
+                        }
                     }
                 }
             }.start();

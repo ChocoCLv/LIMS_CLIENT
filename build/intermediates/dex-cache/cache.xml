@@ -39,6 +39,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\choco\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_0379b95885205c148279bcdbcdb38b14bead64ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\choco\.android\build-cache\305a4f5277bd51916aee6c6bc4450f897b5303eb\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -52,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e30d72c8c7574ae2e5d74aa7b3f0b4c2d4021182">
+        sha1="bddba801bd5f3c4cb3db27a2c07dab837fcd512b">
         <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6b542e4d2a1c6b88d9ee3e009086966bd1dea010\classes.dex" />
     </item>
     <item
@@ -63,6 +72,24 @@
         revision="25.0.2"
         sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
         <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_84983539c080f49d53f4337ce99ad9491cd3bc15\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.0.1\9ebf6cd580d67601fbf88fd007aab4703b19e4c2\core-3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ebf6cd580d67601fbf88fd007aab4703b19e4c2">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.0.1_667d1d6437ec5fc4a5c8d74a279d1593d880e5ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\.android\build-cache\4bf9f4473b06b7ed9f04c075cb2224519954d3af\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7eb68150c290a271a716675ebdfd176eac694124">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4a47c740ac8670c596516550b106de91b0054056\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,6 +111,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\choco\.android\build-cache\1da32c96b010498b0bb59b85bf9538543dc80446\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4d7d4290dc3f13bdb95a92b2377d78e66084dfa">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e3ae09f059b39b0fbf5ae5a501e7ee6dfb028edc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\choco\.android\build-cache\694771ddd7cf673aace6bccf20bbc71c20edd3a4\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -93,12 +129,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\choco\.android\build-cache\c7d93a52774e1a4f2ff15028db5827194f3ef37a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f38c1fe0ee3d0ef717e7f32131719fccf07fd6c7">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_794b29e1cd1241c1fa36c985d1fb1c5902810ee6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
         <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_64af157b14f6b982d156db00dc3ad32642bfd465\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\choco\.android\build-cache\8d0b42dbd3eca9baf7a2c942d6a9cdd21730ddb8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\choco\Project\Android\LIMS_CLIENT\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f1b07b53fbe91e914c9971de644e35fae8f8580e\classes.dex" />
     </item>
     <item
         is-multidex="true"
