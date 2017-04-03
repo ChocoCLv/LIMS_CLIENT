@@ -9,9 +9,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
@@ -27,7 +25,8 @@ public class CommThread implements Runnable{
     public Handler rcvHandler;
     private Handler handler;
     private InetAddress svrAddress;
-    private DatagramPacket packet;
+    private DatagramPacket sndPacket;
+    private DatagramPacket inPacket;
     private DatagramSocket socket;
     private static final int svrPort = Global.svrPort;
     private static final int localPort = Global.localPort;
@@ -63,12 +62,14 @@ public class CommThread implements Runnable{
             new Thread(){
                 @Override
                 public void run(){
+                    Log.i("login","recv thread start");
                     byte[] data = new byte[Global.MAX_LENGTH];
-                    packet = new DatagramPacket(data,data.length);
+                    inPacket = new DatagramPacket(data,data.length);
                     while(true){
                         try{
-                            socket.receive(packet);
-                            String resp = new String(packet.getData() , packet.getOffset() , packet.getLength());
+                            socket.receive(inPacket);
+                            Log.i("login","recv response from server");
+                            String resp = new String(inPacket.getData() , inPacket.getOffset() , inPacket.getLength());
                             Message msg = new Message();
                             msg.what = Global.FROM_COMMTHREAD;
                             msg.obj = resp;
@@ -86,10 +87,10 @@ public class CommThread implements Runnable{
                 public void handleMessage(Message msg){
                     if(msg.what == Global.FROM_UITHREAD){
                         Log.i("login","get message from ui thread");
-                        packet = new DatagramPacket(msg.obj.toString().getBytes(),
+                        sndPacket = new DatagramPacket(msg.obj.toString().getBytes(),
                                 msg.obj.toString().length(),svrAddress,svrPort);
                         try{
-                            socket.send(packet);
+                            socket.send(sndPacket);
                             Log.i("login","send message to server");
                         }catch (Exception e){
                             e.printStackTrace();

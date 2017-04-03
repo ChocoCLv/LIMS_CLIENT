@@ -42,8 +42,8 @@ public class LoginActivity extends Activity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //login();
-                startNewActivity("STUDENT");
+                login();
+                //startNewActivity("STUDENT");
             }
         });
 
@@ -66,6 +66,7 @@ public class LoginActivity extends Activity {
                         }
                     }catch (JSONException e){
                         e.printStackTrace();
+                        Log.i("login","illegal json data");
                     }
                 }
             }
@@ -90,8 +91,8 @@ public class LoginActivity extends Activity {
 
         JSONObject jo =  new JSONObject();
         try {
-            jo.put("username", edtTxtUsername.getText().toString());
-            jo.put("password", edtTxtPwd.getText().toString());
+            jo.put("USERNAME", edtTxtUsername.getText().toString());
+            jo.put("PASSWORD", edtTxtPwd.getText().toString());
         }catch (org.json.JSONException e){
             e.printStackTrace();
         }
