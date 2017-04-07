@@ -10,42 +10,259 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/core.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_android_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/core_3_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/build.gradle" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/core_3_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/zxing_android_embedded_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/zxing_android_integration_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/zxing_android_legacy_2_0_1.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/Global.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="定制zxing">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/big-1d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/big-aztec.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/big-datamatrix.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/big-pdf417.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/big-qr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/contact-results-screen.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/demo-no.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/demo-yes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/scan-example.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/scan-from-phone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/images/search-book-contents.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/drawable-hdpi/launcher_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/drawable-xhdpi/launcher_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/drawable-xxhdpi/launcher_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/drawable/launcher_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/drawable/share_via_barcode.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/raw/beep.ogg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-de/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-de/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-de/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-de/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-de/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-de/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-de/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-en/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-en/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-en/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-en/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-en/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-en/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-en/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-es/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-es/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-es/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-es/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-es/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-es/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-es/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-it/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-it/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-it/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-it/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-it/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-it/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-it/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/about1d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/about2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/license.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/scanning.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/sharing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/whatsnew.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/html/apache-license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/assets/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/AmbientLightManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/BeepManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/CaptureActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/CaptureActivityHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/Contents.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeFormatManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeHintManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/FinishListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/HelpActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/HttpHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/InactivityTimer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/IntentSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/Intents.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/LocaleManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/PreferencesActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/PreferencesFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/ScanFromWebPageManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/ViewfinderResultPointCallback.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/ViewfinderView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/BrowseBookListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/SearchBookContentsActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/SearchBookContentsAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/SearchBookContentsListItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/SearchBookContentsResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/AutoFocusManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/CameraConfigurationManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/CameraConfigurationUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/CameraManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/FrontLightMode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/PreviewCallback.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/open/CameraFacing.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/open/OpenCamera.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/open/OpenCameraInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/clipboard/ClipboardInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/ContactEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/EncodeActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/Formatter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/MECARDContactEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/QRCodeEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/VCardContactEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/VCardFieldFormatter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/VCardTelDisplayFormatter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/DBHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/HistoryActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/HistoryItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/HistoryItemAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/HistoryManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/AddressBookResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/CalendarResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/EmailAddressResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/GeoResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ISBNResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ProductResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ResultButtonListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ResultHandlerFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/SMSResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/TelResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/TextResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/URIResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/WifiResultHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/BookResultInfoRetriever.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/ProductResultInfoRetriever.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/SupplementalInfoRetriever.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/TitleRetriever.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/URIResultInfoRetriever.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/AppInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/AppPickerActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/BookmarkAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/BookmarkPickerActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/LoadPackagesAsyncTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/ShareActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/wifi/NetworkType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/wifi/WifiConfigManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout-land/encode.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout-land/share.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout-ldpi/capture.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/app_picker_list_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/bookmark_picker_list_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/capture.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/encode.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/help.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/history_list_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/search_book_contents.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/search_book_contents_header.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/search_book_contents_list_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/layout/share.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/menu/capture.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/menu/encode.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/menu/history.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-ar/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-bg/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-ca/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-cs/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-da/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-de/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-el/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-es/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-eu/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-fa/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-fi/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-fr/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-hi/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-hu/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-in/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-it/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-iw/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-ja/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-ko/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-nl/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-pl/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-pt/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-ro/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-ru/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-sk/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-sl/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-sv/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-th/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-tr/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-uk/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-zh-rCN/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values-zh/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values/arrays.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values/colors.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values/dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values/ids.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/values/themes.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zxing/src/main/res/xml/preferences.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -169,8 +386,8 @@
       <file leaf-file-name="LocaleManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/LocaleManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="84" column="47" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
+            <state relative-caret-position="396">
+              <caret line="87" column="55" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -2968,72 +3185,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zxing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zxing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zxing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="AndroidView">
@@ -3532,10 +3683,17 @@
       <option name="project" value="LOCAL" />
       <updated>1491210650374</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="定制zxing">
+      <created>1491555024647</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1491555024647</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -3548,8 +3706,8 @@
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1974132" sideWeight="0.4301887" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287951" sideWeight="0.49849057" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1974132" sideWeight="0.4301887" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3560,7 +3718,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1974132" sideWeight="0.56981134" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287951" sideWeight="0.5015094" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22339623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287951" sideWeight="0.49849057" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3650,7 +3808,8 @@
     <MESSAGE value="增加网络权限" />
     <MESSAGE value="增加学生的设备借入扫码功能" />
     <MESSAGE value="配置zxing为二维码扫描" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置zxing为二维码扫描" />
+    <MESSAGE value="定制zxing" />
+    <option name="LAST_COMMIT_MESSAGE" value="定制zxing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4090,8 +4249,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/LocaleManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="84" column="47" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
+        <state relative-caret-position="396">
+          <caret line="87" column="55" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
           <folding />
         </state>
       </provider>
