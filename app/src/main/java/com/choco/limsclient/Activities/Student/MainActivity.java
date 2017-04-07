@@ -7,16 +7,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.choco.limsclient.R;
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
-
-import java.util.ArrayList;
+import com.google.zxing.client.android.CaptureActivity;
 
 public class MainActivity extends Activity {
 
@@ -33,8 +28,9 @@ public class MainActivity extends Activity {
         btnBorrowDevice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                checkPermissions();
-                borrowDevice();
+                if(checkPermissions()){
+                    borrowDevice();
+                }
             }
         });
 
@@ -45,37 +41,48 @@ public class MainActivity extends Activity {
     }
 
     private void borrowDevice() {
-        IntentIntegrator integrator = new IntentIntegrator(com.choco.limsclient.Activities.Student.MainActivity.this);
-        ArrayList<String> formats = new ArrayList<>();
-        formats.add("QR_CODE");
-        integrator.setPrompt("test");
-        integrator.setScanningRectangle(600, 600);
-        integrator.initiateScan(formats);
+       Intent intent = new Intent(com.choco.limsclient.Activities.Student.MainActivity.this,
+               CaptureActivity.class);
+        startActivity(intent);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-        if (scanResult != null) {
-            String result = scanResult.getContents();
-            Log.d("code", result);
-            Toast.makeText(this, result, Toast.LENGTH_LONG).show();
-        } else {
-            super.onActivityResult(requestCode, resultCode, data);
-        }
-    }
-
-    private void checkPermissions() {
+    private boolean checkPermissions() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             for (String permission : permissions) {
                 // 检查该权限是否已经获取
                 int i = ContextCompat.checkSelfPermission(this, permission);
                 // 权限是否已经 授权 GRANTED---授权  DINIED---拒绝
                 if (i != PackageManager.PERMISSION_GRANTED) {
-                    // 如果没有授予该权限，就去提示用户请求
+                    // 如果没有授予该权限，就去提示用户请求  异步方法 调用后即返回
                     ActivityCompat.requestPermissions(this, permissions, 321);
+                    return false;
                 }
             }
+        }
+        return true;
+    }
+
+    @Override
+    public void onRequestPermissionsResult(
+            int requestCode, String permissions[], int[] grantResults){
+        switch (requestCode) {
+            case 321: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    borrowDevice();
+
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                }
+                return;
+            }
+
+            // other 'case' lines to check for other
+            // permissions this app might request
         }
     }
 }

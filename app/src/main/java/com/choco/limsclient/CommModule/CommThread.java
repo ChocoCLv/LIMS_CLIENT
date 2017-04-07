@@ -14,7 +14,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
-import com.choco.limsclient.Util.Global;
+import com.choco.limsclient.Config.Global;
 
 /**
  * Created by choco on 2017/1/23.

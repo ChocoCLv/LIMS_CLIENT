@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
-import com.choco.limsclient.Util.Global;
+import com.choco.limsclient.Config.Global;
 
 import org.json.JSONException;
 import org.json.JSONObject;
