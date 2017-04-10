@@ -1,10 +1,10 @@
 package com.choco.limsclient.Activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.Config.Global;
 import com.choco.limsclient.R;
+import com.google.zxing.MultiFormatWriter;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,8 +23,8 @@ import org.json.JSONTokener;
 import java.util.HashMap;
 
 
-public class LoginActivity extends Activity {
 
+public class LoginActivity extends AppCompatActivity {
 
     EditText edtTxtUsername;
     EditText edtTxtPwd;
@@ -35,13 +36,15 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setTitle("LIMS-实验室管理系统");
         findView();
         comm = CommThread.getInstance();
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //login();
-                startNewActivity("STUDENT");
+                //startNewActivity("STUDENT");
+                startNewActivity("LABADMIN");
             }
         });
 
@@ -77,6 +80,7 @@ public class LoginActivity extends Activity {
         HashMap<String, String> userTypeToActivity = new HashMap<>();
         userTypeToActivity.put("STUDENT", "com.choco.limsclient.Activities.Student.MainActivity");
         userTypeToActivity.put("TEACHER", "com.choco.limsclient.Activities.Teacher.MainActivity");
+        userTypeToActivity.put("LABADMIN", "com.choco.limsclient.Activities.LabAdmin.MainActivity");
         try {
             Intent intent = new Intent(LoginActivity.this, Class.forName(userTypeToActivity.get(userType)));
             startActivity(intent);

@@ -12,9 +12,9 @@ import android.widget.Button;
 import com.choco.limsclient.Activities.QRCode.ScanActivity;
 import com.choco.limsclient.R;
 import com.google.zxing.integration.android.IntentIntegrator;
+import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 public class MainActivity extends Activity {
-
     Button btnBorrowDevice;
     String permissions[] = {"android.permission.CAMERA"};
 

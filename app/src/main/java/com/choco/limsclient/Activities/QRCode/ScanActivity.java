@@ -13,8 +13,7 @@ public class ScanActivity extends CaptureActivity {
         super.onCreate(savedInstanceState);
     }
 
-
-    @Override
+   /* @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             ScanActivity.this.finish();
@@ -22,6 +21,6 @@ public class ScanActivity extends CaptureActivity {
             return super.onKeyDown(keyCode,event);
         }
         return true;
-    }
+    }*/
 }
 
