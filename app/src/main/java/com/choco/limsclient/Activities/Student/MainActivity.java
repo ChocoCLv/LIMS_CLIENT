@@ -1,7 +1,6 @@
 package com.choco.limsclient.Activities.Student;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -10,8 +9,9 @@ import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.Button;
 
+import com.choco.limsclient.Activities.QRCode.ScanActivity;
 import com.choco.limsclient.R;
-import com.google.zxing.client.android.CaptureActivity;
+import com.google.zxing.integration.android.IntentIntegrator;
 
 public class MainActivity extends Activity {
 
@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
         btnBorrowDevice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(checkPermissions()){
+                if (checkPermissions()) {
                     borrowDevice();
                 }
             }
@@ -41,9 +41,10 @@ public class MainActivity extends Activity {
     }
 
     private void borrowDevice() {
-       Intent intent = new Intent(com.choco.limsclient.Activities.Student.MainActivity.this,
-               CaptureActivity.class);
-        startActivity(intent);
+        IntentIntegrator intentIntegrator = new IntentIntegrator(this);
+        intentIntegrator.setCaptureActivity(ScanActivity.class);
+        intentIntegrator.setOrientationLocked(false);
+        intentIntegrator.initiateScan();
     }
 
     private boolean checkPermissions() {
@@ -64,7 +65,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onRequestPermissionsResult(
-            int requestCode, String permissions[], int[] grantResults){
+            int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
             case 321: {
                 // If request is cancelled, the result arrays are empty.

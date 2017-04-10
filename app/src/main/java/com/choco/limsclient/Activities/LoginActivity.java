@@ -12,8 +12,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.choco.limsclient.CommModule.CommThread;
-import com.choco.limsclient.R;
 import com.choco.limsclient.Config.Global;
+import com.choco.limsclient.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -40,8 +40,8 @@ public class LoginActivity extends Activity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                login();
-                //startNewActivity("STUDENT");
+                //login();
+                startNewActivity("STUDENT");
             }
         });
 

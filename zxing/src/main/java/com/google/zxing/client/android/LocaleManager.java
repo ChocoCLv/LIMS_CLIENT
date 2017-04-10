@@ -90,7 +90,9 @@ public final class LocaleManager {
         GOOGLE_COUNTRY_TLD.put(Locale.UK.getCountry(), "co.uk");
         GOOGLE_COUNTRY_TLD.put(Locale.US.getCountry(), "com");
     }
+
     private static final Map<String, String> GOOGLE_BOOK_SEARCH_COUNTRY_TLD = GOOGLE_COUNTRY_TLD;
+
 
     static {
         GOOGLE_PRODUCT_SEARCH_COUNTRY_TLD = new HashMap<>();

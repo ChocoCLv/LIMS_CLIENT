@@ -9,7 +9,7 @@
         android:id="@+id/btn_borrowDevice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="设备借入"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:text="设备借入" />
 
 </RelativeLayout>
