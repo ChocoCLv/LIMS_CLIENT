@@ -27,7 +27,8 @@
             android:theme="@style/zxing_CaptureTheme"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".Activities.LabAdmin.MainActivity" />
-        <activity android:name=".Activities.LabAdmin.LendDeviceActivity"></activity>
+        <activity android:name=".Activities.LabAdmin.LendDeviceActivity" />
+        <activity android:name=".Activities.LabAdmin.AddDeviceActivity"></activity>
     </application>
 
 </manifest>

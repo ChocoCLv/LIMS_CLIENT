@@ -12,7 +12,6 @@ import android.widget.Button;
 import com.choco.limsclient.Activities.QRCode.ScanActivity;
 import com.choco.limsclient.R;
 import com.google.zxing.integration.android.IntentIntegrator;
-import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 public class MainActivity extends Activity {
     Button btnBorrowDevice;
@@ -22,7 +21,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_main);
-
+        setTitle("学生姓名学号");
         findView();
 
         btnBorrowDevice.setOnClickListener(new View.OnClickListener() {

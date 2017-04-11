@@ -24,7 +24,8 @@ public class CommThread implements Runnable {
     private static final int svrPort = Global.svrPort;
     private static final int localPort = Global.localPort;
     private static CommThread commThread = null;
-    public Handler rcvHandler;
+    public Handler commHandler;
+    private Thread currentThread;
     private Handler handler;
     private InetAddress svrAddress;
     private DatagramPacket sndPacket;
@@ -81,16 +82,14 @@ public class CommThread implements Runnable {
             }.start();
             Looper.prepare();
             Log.i("login", "thread start");
-            rcvHandler = new Handler() {
+            commHandler = new Handler() {
                 @Override
                 public void handleMessage(Message msg) {
-                    if (msg.what == Global.FROM_UITHREAD) {
-                        Log.i("login", "get message from ui thread");
+                    if (msg.what == Global.FROM_LOGINACTIVITY||msg.what==Global.FROM_LABADMIN_LENDDEVICE) {
                         sndPacket = new DatagramPacket(msg.obj.toString().getBytes(),
                                 msg.obj.toString().length(), svrAddress, svrPort);
                         try {
                             socket.send(sndPacket);
-                            Log.i("login", "send message to server");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -103,5 +102,4 @@ public class CommThread implements Runnable {
         }
 
     }
-
 }

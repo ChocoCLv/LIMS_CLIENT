@@ -14,14 +14,12 @@ import android.widget.Toast;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.Config.Global;
 import com.choco.limsclient.R;
-import com.google.zxing.MultiFormatWriter;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.util.HashMap;
-
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -42,9 +40,9 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //login();
+                login();
                 //startNewActivity("STUDENT");
-                startNewActivity("LABADMIN");
+                //startNewActivity("LABADMIN");
             }
         });
 
@@ -74,15 +72,17 @@ public class LoginActivity extends AppCompatActivity {
         };
         comm.setHandler(handler);
         new Thread(comm).start();
+
     }
 
     private void startNewActivity(String userType) {
         HashMap<String, String> userTypeToActivity = new HashMap<>();
         userTypeToActivity.put("STUDENT", "com.choco.limsclient.Activities.Student.MainActivity");
         userTypeToActivity.put("TEACHER", "com.choco.limsclient.Activities.Teacher.MainActivity");
-        userTypeToActivity.put("LABADMIN", "com.choco.limsclient.Activities.LabAdmin.MainActivity");
+        userTypeToActivity.put("LAB_ADMIN", "com.choco.limsclient.Activities.LabAdmin.MainActivity");
         try {
             Intent intent = new Intent(LoginActivity.this, Class.forName(userTypeToActivity.get(userType)));
+            this.finish();
             startActivity(intent);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -100,10 +100,10 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         Message msg = new Message();
-        msg.what = Global.FROM_UITHREAD;
+        msg.what = Global.FROM_LOGINACTIVITY;
         msg.obj = jo.toString();
         Log.i("login", jo.toString());
-        comm.rcvHandler.sendMessage(msg);
+        comm.commHandler.sendMessage(msg);
         Log.i("login", "send msg to comm thread");
 
     }
@@ -113,8 +113,8 @@ public class LoginActivity extends AppCompatActivity {
         edtTxtPwd = (EditText) findViewById(R.id.edtText_pwd);
         btnLogin = (Button) findViewById(R.id.btn_login);
 
-        edtTxtUsername.setText("2013010918015");
-        edtTxtPwd.setText("8682502101");
+        edtTxtUsername.setText("123");
+        edtTxtPwd.setText("admin");
     }
 
 }
