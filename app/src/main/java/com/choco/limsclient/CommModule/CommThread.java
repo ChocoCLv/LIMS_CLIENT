@@ -25,7 +25,6 @@ public class CommThread implements Runnable {
     private static final int localPort = Global.localPort;
     private static CommThread commThread = null;
     public Handler commHandler;
-    private Thread currentThread;
     private Handler handler;
     private InetAddress svrAddress;
     private DatagramPacket sndPacket;
@@ -85,7 +84,7 @@ public class CommThread implements Runnable {
             commHandler = new Handler() {
                 @Override
                 public void handleMessage(Message msg) {
-                    if (msg.what == Global.FROM_LOGINACTIVITY||msg.what==Global.FROM_LABADMIN_LENDDEVICE) {
+                    if (msg.what == Global.FROM_LOGINACTIVITY || msg.what == Global.FROM_LABADMIN_LENDDEVICE) {
                         sndPacket = new DatagramPacket(msg.obj.toString().getBytes(),
                                 msg.obj.toString().length(), svrAddress, svrPort);
                         try {

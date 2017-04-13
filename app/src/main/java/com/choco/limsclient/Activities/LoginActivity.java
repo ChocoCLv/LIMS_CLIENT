@@ -30,6 +30,8 @@ public class LoginActivity extends AppCompatActivity {
     CommThread comm;
     Handler handler;
 
+    String username;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                         String loginResult = resp.getString("LOGIN_STATUS");
                         if (loginResult.equals("SUCCESS")) {
                             Log.i("login", "登录成功");
+                            username = resp.getString("USER_NAME");
                             String userType = resp.getString("USERTYPE");
                             startNewActivity(userType);
                         } else if (loginResult.equals("FAILED")) {
@@ -82,18 +85,21 @@ public class LoginActivity extends AppCompatActivity {
         userTypeToActivity.put("LAB_ADMIN", "com.choco.limsclient.Activities.LabAdmin.MainActivity");
         try {
             Intent intent = new Intent(LoginActivity.this, Class.forName(userTypeToActivity.get(userType)));
-            this.finish();
+            intent.putExtra("USER_NAME", username);
+
             startActivity(intent);
+            this.finish();
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
     private void login() {
-
         JSONObject jo = new JSONObject();
         try {
-            jo.put("USERNAME", edtTxtUsername.getText().toString());
+            jo.put("REQUEST_TYPE", "LOGIN");
+            jo.put("USER_ID", edtTxtUsername.getText().toString());
             jo.put("PASSWORD", edtTxtPwd.getText().toString());
         } catch (org.json.JSONException e) {
             e.printStackTrace();
@@ -105,7 +111,6 @@ public class LoginActivity extends AppCompatActivity {
         Log.i("login", jo.toString());
         comm.commHandler.sendMessage(msg);
         Log.i("login", "send msg to comm thread");
-
     }
 
     private void findView() {
@@ -116,5 +121,4 @@ public class LoginActivity extends AppCompatActivity {
         edtTxtUsername.setText("123");
         edtTxtPwd.setText("admin");
     }
-
 }
