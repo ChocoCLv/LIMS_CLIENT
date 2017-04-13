@@ -29,7 +29,8 @@
         <activity android:name=".Activities.LabAdmin.MainActivity" />
         <activity android:name=".Activities.LabAdmin.LendDeviceActivity" />
         <activity android:name=".Activities.LabAdmin.AddDeviceActivity" />
-        <activity android:name=".Activities.QRCode.GenQRCodeActivity"></activity>
+        <activity android:name=".Activities.QRCode.GenQRCodeActivity" />
+        <activity android:name=".Activities.Student.BorrowDeviceActivity"></activity>
     </application>
 
 </manifest>

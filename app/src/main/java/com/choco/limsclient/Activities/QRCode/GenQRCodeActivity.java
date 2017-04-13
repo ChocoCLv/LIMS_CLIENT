@@ -34,7 +34,7 @@ public class GenQRCodeActivity extends AppCompatActivity {
         type = "设备类型：" + intent.getStringExtra("DEVICE_TYPE") + "\n";
         principal = "设备负责人：" + intent.getStringExtra("DEVICE_PRINCIPAL") + "\n";
 
-        qrCodeImageView = (ImageView) findViewById(R.id.imageView_qrCode);
+        qrCodeImageView = (ImageView) findViewById(R.id.iv_qrCode);
         qrCodeImageView.setImageBitmap(encodeAsBitmap(name + type + principal));
 
         tvDeviceInfo = (TextView) findViewById(R.id.textView_deviceInfo);
