@@ -5,7 +5,7 @@ package com.choco.limsclient.Config;
  */
 
 public interface Global {
-    String svrAddr = "192.168.1.155";
+    String svrAddr = "192.168.1.105";
     int svrPort = 2222;
     int localPort = 3333;
     int FROM_LOGINACTIVITY = 0X001;

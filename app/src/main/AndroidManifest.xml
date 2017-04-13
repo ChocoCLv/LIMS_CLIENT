@@ -28,7 +28,8 @@
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".Activities.LabAdmin.MainActivity" />
         <activity android:name=".Activities.LabAdmin.LendDeviceActivity" />
-        <activity android:name=".Activities.LabAdmin.AddDeviceActivity"></activity>
+        <activity android:name=".Activities.LabAdmin.AddDeviceActivity" />
+        <activity android:name=".Activities.QRCode.GenQRCodeActivity"></activity>
     </application>
 
 </manifest>

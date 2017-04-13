@@ -17,9 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_labadmin_main);
-        setTitle("管理员主界面");
+        setTitle(getIntent().getStringExtra("USER_NAME"));
         findView();
-
 
         View.OnClickListener btnOnClickListener = new View.OnClickListener() {
             @Override
@@ -42,15 +41,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
-
         btnAddDevice.setOnClickListener(btnOnClickListener);
         btnLendDevice.setOnClickListener(btnOnClickListener);
     }
-
 
     public void findView() {
         btnLendDevice = (Button) findViewById(R.id.btn_lendDevice);
         btnAddDevice = (Button) findViewById(R.id.btn_addDevice);
     }
-
 }
