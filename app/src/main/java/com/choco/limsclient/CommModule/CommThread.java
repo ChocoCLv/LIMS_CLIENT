@@ -85,8 +85,9 @@ public class CommThread implements Runnable {
                 @Override
                 public void handleMessage(Message msg) {
                     if (msg.what == Global.FROM_LOGINACTIVITY || msg.what == Global.FROM_LABADMIN_LENDDEVICE) {
-                        sndPacket = new DatagramPacket(msg.obj.toString().getBytes(),
-                                msg.obj.toString().length(), svrAddress, svrPort);
+                        byte[] data = msg.obj.toString().getBytes();
+                        int dataLength = data.length;
+                        sndPacket = new DatagramPacket(data, dataLength, svrAddress, svrPort);
                         try {
                             socket.send(sndPacket);
                         } catch (Exception e) {
