@@ -21,6 +21,7 @@ import org.json.JSONTokener;
 
 import java.util.HashMap;
 
+import static com.choco.limsclient.Config.Global.userInfo;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -29,7 +30,6 @@ public class LoginActivity extends AppCompatActivity {
     Button btnLogin;
     CommThread comm;
     Handler handler;
-
     String username;
 
     @Override
@@ -61,6 +61,10 @@ public class LoginActivity extends AppCompatActivity {
                                     .show();
                             username = resp.getString("USER_NAME");
                             String userType = resp.getString("USERTYPE");
+
+                            userInfo.setUserName(username);
+                            userInfo.setUserType(userType);
+
                             startNewActivity(userType);
                         } else if (loginResult.equals("FAILED")) {
                             Toast.makeText(LoginActivity.this, "Login failed.Please check your username and password", Toast.LENGTH_LONG)
@@ -85,17 +89,15 @@ public class LoginActivity extends AppCompatActivity {
         userTypeToActivity.put("LAB_ADMIN", "com.choco.limsclient.Activities.LabAdmin.MainActivity");
         try {
             Intent intent = new Intent(LoginActivity.this, Class.forName(userTypeToActivity.get(userType)));
-            intent.putExtra("USER_NAME", username);
-
             startActivity(intent);
             this.finish();
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
     private void login() {
+        userInfo.setUserId(edtTxtUsername.getText().toString());
         JSONObject jo = new JSONObject();
         try {
             jo.put("REQUEST_TYPE", "LOGIN");

@@ -66,7 +66,7 @@ public class AddDeviceActivity extends AppCompatActivity {
 
     public void findView() {
         btnAddDevice = (Button) findViewById(R.id.btn_add);
-        btnGenQRCode = (Button)findViewById(R.id.btn_genQR);
+        btnGenQRCode = (Button) findViewById(R.id.btn_genQR);
         edtDeviceName = (EditText) findViewById(R.id.edt_deviceName);
         edtDeviceType = (EditText) findViewById(R.id.edt_deviceType);
         edtDevicePrincipal = (EditText) findViewById(R.id.edt_devicePrincipal);

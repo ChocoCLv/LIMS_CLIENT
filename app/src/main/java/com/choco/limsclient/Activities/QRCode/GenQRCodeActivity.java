@@ -16,8 +16,6 @@ import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
 
 public class GenQRCodeActivity extends AppCompatActivity {
     String name;
@@ -40,17 +38,17 @@ public class GenQRCodeActivity extends AppCompatActivity {
         qrCodeImageView.setImageBitmap(encodeAsBitmap(name + type + principal));
 
         tvDeviceInfo = (TextView) findViewById(R.id.textView_deviceInfo);
-        tvDeviceInfo.setText(name+type+principal);
+        tvDeviceInfo.setText(name + type + principal);
     }
 
     public Bitmap encodeAsBitmap(String text) {
         Bitmap bitmap = null;
         BitMatrix result = null;
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
-        HashMap<EncodeHintType,String> hints = new HashMap<>() ;
-        hints.put(EncodeHintType.CHARACTER_SET,"UTF-8");
+        HashMap<EncodeHintType, String> hints = new HashMap<>();
+        hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
         try {
-            result = multiFormatWriter.encode(text, BarcodeFormat.QR_CODE, 200, 200,hints);
+            result = multiFormatWriter.encode(text, BarcodeFormat.QR_CODE, 200, 200, hints);
             BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
             bitmap = barcodeEncoder.createBitmap(result);
         } catch (WriterException e) {

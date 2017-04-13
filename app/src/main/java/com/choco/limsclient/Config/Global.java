@@ -12,4 +12,5 @@ public interface Global {
     int FROM_COMMTHREAD = 0x002;
     int FROM_LABADMIN_LENDDEVICE = 0x0003;
     int MAX_LENGTH = 4 * 1024;
+    CurrentUserInformation userInfo = CurrentUserInformation.getInstance();
 }

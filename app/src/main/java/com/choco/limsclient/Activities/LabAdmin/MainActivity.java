@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.choco.limsclient.R;
 
+import static com.choco.limsclient.Config.Global.userInfo;
+
 public class MainActivity extends AppCompatActivity {
 
     Button btnLendDevice;
@@ -17,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_labadmin_main);
-        setTitle(getIntent().getStringExtra("USER_NAME"));
+        setTitle(userInfo.getUserName());
         findView();
 
         View.OnClickListener btnOnClickListener = new View.OnClickListener() {
