@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 login();
                 //startNewActivity("STUDENT");
-                //startNewActivity("LABADMIN");
+                //startNewActivity("LAB_ADMIN");
             }
         });
 
@@ -57,12 +57,12 @@ public class LoginActivity extends AppCompatActivity {
                         JSONObject resp = (JSONObject) jsonParser.nextValue();
                         String loginResult = resp.getString("LOGIN_STATUS");
                         if (loginResult.equals("SUCCESS")) {
-                            Log.i("login", "登录成功");
+                            Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_LONG)
+                                    .show();
                             username = resp.getString("USER_NAME");
                             String userType = resp.getString("USERTYPE");
                             startNewActivity(userType);
                         } else if (loginResult.equals("FAILED")) {
-                            Log.i("login", "登录失败");
                             Toast.makeText(LoginActivity.this, "Login failed.Please check your username and password", Toast.LENGTH_LONG)
                                     .show();
                         }
@@ -118,7 +118,7 @@ public class LoginActivity extends AppCompatActivity {
         edtTxtPwd = (EditText) findViewById(R.id.edtText_pwd);
         btnLogin = (Button) findViewById(R.id.btn_login);
 
-        edtTxtUsername.setText("123");
-        edtTxtPwd.setText("admin");
+        edtTxtUsername.setText("2013010918015");
+        edtTxtPwd.setText("8682502101");
     }
 }
