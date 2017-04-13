@@ -15,8 +15,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_borrow_device.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
@@ -2933,7 +2931,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492085437441</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="添加学生用户借入设备界面（之前是在主界面点击后即扫描二维码）">
+      <created>1492087095846</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1492087095846</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -3060,7 +3065,8 @@
     <MESSAGE value="处理扫描返回的结果" />
     <MESSAGE value="发送的数据中含有中文时，msg.obj.toString().Length()不是实际数据的length，要使用原始的Bytes的长度来发送数据。可能是因为中文编码的字节数不一样" />
     <MESSAGE value="添加用户信息文件 保存用户的登录信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加用户信息文件 保存用户的登录信息" />
+    <MESSAGE value="添加学生用户借入设备界面（之前是在主界面点击后即扫描二维码）" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加学生用户借入设备界面（之前是在主界面点击后即扫描二维码）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
