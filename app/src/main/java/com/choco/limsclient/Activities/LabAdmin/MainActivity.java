@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnLendDevice;
     Button btnAddDevice;
+    Button btnUpdateDeviceInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_labadmin_main);
         setTitle(userInfo.getUserName());
         findView();
+        setOnClickListener(newOnClickListener());
+    }
 
+    private View.OnClickListener newOnClickListener(){
         View.OnClickListener btnOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,18 +41,28 @@ public class MainActivity extends AppCompatActivity {
                                 LendDeviceActivity.class);
                         startActivity(intent);
                         break;
+                    case R.id.btn_updateDeviceInfo:
+                        intent = new Intent(com.choco.limsclient.Activities.LabAdmin.MainActivity.this,
+                                UpdateDeviceInfoActivity.class);
+                        startActivity(intent);
                     default:
                         break;
                 }
 
             }
         };
-        btnAddDevice.setOnClickListener(btnOnClickListener);
-        btnLendDevice.setOnClickListener(btnOnClickListener);
+        return btnOnClickListener;
     }
 
-    public void findView() {
+    private void setOnClickListener(View.OnClickListener btnOnClickListener){
+        btnAddDevice.setOnClickListener(btnOnClickListener);
+        btnLendDevice.setOnClickListener(btnOnClickListener);
+        btnUpdateDeviceInfo.setOnClickListener(btnOnClickListener);
+    }
+
+    private void findView() {
         btnLendDevice = (Button) findViewById(R.id.btn_lendDevice);
         btnAddDevice = (Button) findViewById(R.id.btn_addDevice);
+        btnUpdateDeviceInfo = (Button)findViewById(R.id.btn_updateDeviceInfo);
     }
 }

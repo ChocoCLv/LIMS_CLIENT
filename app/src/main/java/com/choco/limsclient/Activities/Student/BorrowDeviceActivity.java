@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.choco.limsclient.Activities.QRCode.ScanActivity;
+import com.choco.limsclient.Activities.QRCode.ScanHelper;
 import com.choco.limsclient.R;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -38,10 +39,11 @@ public class BorrowDeviceActivity extends AppCompatActivity {
                 switch (view.getId()) {
                     case R.id.iv_devicePic:
                         if (checkPermissions()) {
-                            borrowDevice();
+                            scanDeviceQR();
                         }
                         break;
                     case R.id.btn_confirmBorrow:
+                        borrowDevice();
                         break;
                     default:
                         break;
@@ -58,11 +60,14 @@ public class BorrowDeviceActivity extends AppCompatActivity {
         tvDeviceInfo = (TextView) findViewById(R.id.tv_deviceInfo);
     }
 
-    private void borrowDevice() {
-        IntentIntegrator intentIntegrator = new IntentIntegrator(this);
-        intentIntegrator.setCaptureActivity(ScanActivity.class);
-        intentIntegrator.setOrientationLocked(false);
-        intentIntegrator.initiateScan();
+    private void scanDeviceQR() {
+        ScanHelper sh = new ScanHelper();
+        sh.scanQRCode(this);
+    }
+
+    private void borrowDevice(){
+        //TODO:向服务器发送借入请求 登记本次借入记录
+
     }
 
     @Override
@@ -103,7 +108,7 @@ public class BorrowDeviceActivity extends AppCompatActivity {
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-                    borrowDevice();
+                    scanDeviceQR();
 
                 } else {
 

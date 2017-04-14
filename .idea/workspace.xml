@@ -14,13 +14,267 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
+    <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="删除zxing源码">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceInfoActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_update_device_info.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-de/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-de/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-de/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-de/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-de/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-de/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-de/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-en/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-en/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-en/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-en/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-en/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-en/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-en/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-es/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-es/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-es/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-es/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-es/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-es/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-es/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fa/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-fr/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-it/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-it/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-it/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-it/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-it/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-it/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-it/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ja/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ko/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-nl/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-pt/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-ru/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-uk/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh-rCN/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/about1d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/about2d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/scanning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/sharing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html-zh/whatsnew.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/html/apache-license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/big-1d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/big-aztec.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/big-datamatrix.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/big-pdf417.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/big-qr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/contact-results-screen.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/demo-no.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/demo-yes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/scan-example.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/scan-from-phone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/images/search-book-contents.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/assets/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/AmbientLightManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/BeepManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/CaptureActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/CaptureActivityHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/Contents.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeFormatManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeHintManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/FinishListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/HelpActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/HttpHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/InactivityTimer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/IntentSource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/Intents.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/LocaleManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/PreferencesActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/PreferencesFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/ScanFromWebPageManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/ViewfinderResultPointCallback.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/ViewfinderView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/BrowseBookListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/SearchBookContentsActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/SearchBookContentsAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/SearchBookContentsListItem.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/book/SearchBookContentsResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/AutoFocusManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/CameraConfigurationManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/CameraConfigurationUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/CameraManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/FrontLightMode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/PreviewCallback.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/open/CameraFacing.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/open/OpenCamera.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/camera/open/OpenCameraInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/clipboard/ClipboardInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/ContactEncoder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/EncodeActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/Formatter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/MECARDContactEncoder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/QRCodeEncoder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/VCardContactEncoder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/VCardFieldFormatter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/encode/VCardTelDisplayFormatter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/DBHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/HistoryActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/HistoryItem.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/HistoryItemAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/history/HistoryManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/AddressBookResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/CalendarResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/EmailAddressResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/GeoResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ISBNResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ProductResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ResultButtonListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/ResultHandlerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/SMSResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/TelResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/TextResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/URIResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/WifiResultHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/BookResultInfoRetriever.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/ProductResultInfoRetriever.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/SupplementalInfoRetriever.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/TitleRetriever.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/result/supplement/URIResultInfoRetriever.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/AppInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/AppPickerActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/BookmarkAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/BookmarkPickerActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/LoadPackagesAsyncTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/share/ShareActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/wifi/NetworkType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/wifi/WifiConfigManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/drawable-hdpi/launcher_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/drawable-xhdpi/launcher_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/drawable-xxhdpi/launcher_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/drawable/launcher_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/drawable/share_via_barcode.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout-land/encode.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout-land/share.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout-ldpi/capture.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/app_picker_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/bookmark_picker_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/capture.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/encode.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/help.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/history_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/search_book_contents.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/search_book_contents_header.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/search_book_contents_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/layout/share.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/menu/capture.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/menu/encode.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/menu/history.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/raw/beep.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-ar/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-bg/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-ca/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-cs/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-da/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-de/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-el/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-es/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-eu/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-fa/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-fi/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-fr/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-hi/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-hu/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-in/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-it/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-iw/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-ja/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-ko/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-nl/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-pl/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-pt/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-ro/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-ru/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-sk/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-sl/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-sv/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-th/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-tr/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-uk/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-zh-rCN/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values-zh/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values/arrays.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values/colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values/ids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/values/themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zxing/src/main/res/xml/preferences.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/GenQRCodeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/GenQRCodeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gen_qrcode.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_gen_qrcode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_main.xml" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,40 +306,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_borrow_device.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_borrow_device.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="activity_update_device_info.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_update_device_info.xml">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java">
+      <file leaf-file-name="AddDeviceActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+            <state relative-caret-position="190">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateDeviceInfoActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceInfoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#665#954#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-                <element signature="e#1070#1071#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,102 +344,12 @@
       <file leaf-file-name="BorrowDeviceActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-212">
-              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
-                <element signature="e#1127#1639#0" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="method#onActivityResult#0;class#BorrowDeviceActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-              <folding>
-                <element signature="e#340#375#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_labadmin_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-              <folding>
-                <element signature="docComment;class#CommThread#0" expanded="false" />
-                <element signature="method#CommThread#0;class#CommThread#0" expanded="false" />
-                <element signature="method#setHandler#0;class#CommThread#0" expanded="false" />
-                <element signature="method#run#0;class#CommThread#0" expanded="false" />
-                <element signature="e#1511#2484#0" expanded="true" />
-                <element signature="e#2483#2484#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Global.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/Global.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CurrentUserInformation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/CurrentUserInformation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-              <folding>
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1032#1033#0" expanded="true" />
-                <element signature="e#1072#1073#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-                <element signature="e#1170#1171#0" expanded="true" />
-                <element signature="e#1202#1203#0" expanded="true" />
+                <element signature="method#findView#0;class#BorrowDeviceActivity#0" expanded="false" />
+                <element signature="method#checkPermissions#0;class#BorrowDeviceActivity#0" expanded="false" />
+                <element signature="method#onRequestPermissionsResult#0;class#BorrowDeviceActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -2056,7 +2216,6 @@
         <option value="$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/CaptureActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/QRCode/ScanActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/LendDeviceActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_main.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanActivity.java" />
@@ -2070,13 +2229,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/CurrentUserInfomation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/CurrentUserInformation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/Global.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_gen_qrcode.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_borrow_device.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_update_device_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceInfoActivity.java" />
       </list>
     </option>
   </component>
@@ -2111,10 +2274,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches">
+      <pane id="PackagesPane">
         <subPane />
       </pane>
       <pane id="AndroidView">
@@ -2281,6 +2441,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="QRCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LIMS_CLIENT" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="limsclient" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Activities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="LabAdmin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2296,6 +2482,9 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane />
       </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -2391,7 +2580,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane />
       </pane>
     </panes>
@@ -2408,9 +2597,9 @@
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
+      <recent name="com.choco.limsclient.Activities.LabAdmin" />
       <recent name="com.choco.limsclient.Activities.Student" />
       <recent name="com.choco.limsclient.Activities.QRCode" />
-      <recent name="com.choco.limsclient.Activities.LabAdmin" />
       <recent name="com.choco.limsclient.Activities" />
       <recent name="com.choco.limsclient.QRCode" />
     </key>
@@ -2944,10 +3133,17 @@
       <option name="project" value="LOCAL" />
       <updated>1492087128927</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="修改命名">
+      <created>1492087158706</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1492087158706</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -2960,7 +3156,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49849057" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13407822" sideWeight="0.49849057" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19723183" sideWeight="0.4301887" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2968,20 +3164,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11033519" sideWeight="0.5028633" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34878892" sideWeight="0.68360776" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3172226" sideWeight="0.4909434" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5015094" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20415473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16690545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18131489" sideWeight="0.3979957" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26150945" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4096886" sideWeight="0.4971367" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4096886" sideWeight="0.4971367" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3072,134 +3268,26 @@
     <MESSAGE value="发送的数据中含有中文时，msg.obj.toString().Length()不是实际数据的length，要使用原始的Bytes的长度来发送数据。可能是因为中文编码的字节数不一样" />
     <MESSAGE value="添加用户信息文件 保存用户的登录信息" />
     <MESSAGE value="添加学生用户借入设备界面（之前是在主界面点击后即扫描二维码）" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加学生用户借入设备界面（之前是在主界面点击后即扫描二维码）" />
+    <MESSAGE value="修改命名" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改命名" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/values-zh/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/values-zh-rCN/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4248">
-          <caret line="118" column="44" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/LocaleManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/layout/capture.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/menu/capture.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/BeepManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/CaptureActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/xml/preferences.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/values/arrays.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-864">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/menu/history.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/menu/encode.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/layout/share.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2413">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/layout/bookmark_picker_list_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/menu/capture.xml" />
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/BeepManager.java" />
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/CaptureActivity.java" />
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/xml/preferences.xml" />
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/values/styles.xml" />
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/values/arrays.xml" />
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/menu/history.xml" />
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/menu/encode.xml" />
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/layout/share.xml" />
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/res/layout/bookmark_picker_list_item.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_scan.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/test/java/com/choco/limsclient/ExampleUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3320,13 +3408,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1512">
@@ -3365,38 +3446,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1704#1989#0" expanded="false" />
-            <element signature="e#1988#1989#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/LendDeviceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="570">
           <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="docComment;class#CommThread#0" expanded="false" />
             <element signature="method#CommThread#0;class#CommThread#0" expanded="false" />
             <element signature="method#setHandler#0;class#CommThread#0" expanded="false" />
             <element signature="method#run#0;class#CommThread#0" expanded="false" />
-            <element signature="e#1511#2484#0" expanded="true" />
-            <element signature="e#2483#2484#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gen_qrcode.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeHintManager.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding>
+            <element signature="e#340#375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_borrow_device.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/CurrentUserInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3408,73 +3556,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/CurrentUserInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding>
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        <state relative-caret-position="393">
+          <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="60" selection-end-column="5" />
           <folding>
-            <element signature="e#340#375#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#findView#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="40" />
+        <state relative-caret-position="190">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gen_qrcode.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_update_device_info.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -3485,48 +3586,43 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#665#954#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
-            <element signature="e#1127#1639#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="method#onActivityResult#0;class#BorrowDeviceActivity#0" expanded="false" />
+            <element signature="method#findView#0;class#BorrowDeviceActivity#0" expanded="false" />
+            <element signature="method#checkPermissions#0;class#BorrowDeviceActivity#0" expanded="false" />
+            <element signature="method#onRequestPermissionsResult#0;class#BorrowDeviceActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_borrow_device.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceInfoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="355">
+          <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
