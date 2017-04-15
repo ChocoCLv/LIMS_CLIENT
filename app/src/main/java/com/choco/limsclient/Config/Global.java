@@ -11,6 +11,7 @@ public interface Global {
     int FROM_LOGINACTIVITY = 0X001;
     int FROM_COMMTHREAD = 0x002;
     int FROM_LABADMIN_LENDDEVICE = 0x0003;
-    int MAX_LENGTH = 4 * 1024;
+    int FROM_LADADMIN_UPDATEDEVICEINFO = 0x0004;
+    int MAX_LENGTH = 4 * 1024;  //配置通信模块发送的最大数据包的大小
     CurrentUserInformation userInfo = CurrentUserInformation.getInstance();
 }

@@ -89,6 +89,7 @@ public class CommThread implements Runnable {
                         int dataLength = buf.length;
                         sndPacket = new DatagramPacket(buf, dataLength, svrAddress, svrPort);
                         try {
+                            //TODO:在通信的数据包前附加认证信息（除了登录的数据包）
                             socket.send(sndPacket);
                         } catch (Exception e) {
                             e.printStackTrace();
