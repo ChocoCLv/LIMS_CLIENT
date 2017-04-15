@@ -12,11 +12,13 @@ import android.widget.Toast;
 
 import com.choco.limsclient.Activities.QRCode.GenQRCodeActivity;
 import com.choco.limsclient.CommModule.CommThread;
+import com.choco.limsclient.Config.CurrentUserInformation;
 import com.choco.limsclient.Config.Global;
 import com.choco.limsclient.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONTokener;
 
 public class AddDeviceActivity extends AppCompatActivity {
 
@@ -25,8 +27,10 @@ public class AddDeviceActivity extends AppCompatActivity {
     EditText edtDeviceName;
     EditText edtDeviceType;
     EditText edtDevicePrincipal;
-    Handler handler;
+    EditText edtDeviceId;
+    CurrentUserInformation userInfo;
     CommThread comm;
+    String deviceId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,53 @@ public class AddDeviceActivity extends AppCompatActivity {
         setTitle("添加新设备");
         findView();
         comm = CommThread.getInstance();
+        userInfo = CurrentUserInformation.getInstance();
+
+        setOnClickListener(newOnClickListener());
+
+        edtDevicePrincipal.setHint(userInfo.getUserName());
+
+        comm.setHandler(newHandler());
+    }
+
+    public Handler newHandler(){
+        Handler handler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                if (msg.what == Global.FROM_COMMTHREAD) {
+                    JSONObject resp;
+                    try {
+                        JSONTokener jsonParser = new JSONTokener(msg.obj.toString());
+                        resp = (JSONObject) jsonParser.nextValue();
+                        String result = resp.getString("ADD_STATUS");
+                        if(result.equals("SUCCESS")){
+                            Toast.makeText(AddDeviceActivity.this, "添加成功！", Toast.LENGTH_LONG).show();
+                        }else{
+                            //TODO:返回更多添加失败的原因
+                            Toast.makeText(AddDeviceActivity.this, "添加失败！", Toast.LENGTH_LONG).show();
+                        }
+                    }catch (JSONException e){
+                        e.printStackTrace();
+                        return;
+                    }
+                    try{
+                        String device_id = resp.getString("DEVICE_ID");
+                        edtDeviceId.setText(device_id);
+                    }catch (JSONException e){
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+        return handler;
+    }
+
+    public void setOnClickListener(View.OnClickListener listener){
+        btnAddDevice.setOnClickListener(listener);
+        btnGenQRCode.setOnClickListener(listener);
+    }
+
+    public View.OnClickListener newOnClickListener(){
         View.OnClickListener btnOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,21 +98,9 @@ public class AddDeviceActivity extends AppCompatActivity {
                     default:
                         break;
                 }
-
             }
         };
-        btnAddDevice.setOnClickListener(btnOnClickListener);
-        btnGenQRCode.setOnClickListener(btnOnClickListener);
-
-        handler = new Handler() {
-            @Override
-            public void handleMessage(Message msg) {
-                if (msg.what == Global.FROM_COMMTHREAD) {
-                    Toast.makeText(AddDeviceActivity.this, "添加成功！", Toast.LENGTH_LONG).show();
-                }
-            }
-        };
-        comm.setHandler(handler);
+        return btnOnClickListener;
     }
 
     public void findView() {
@@ -70,6 +109,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         edtDeviceName = (EditText) findViewById(R.id.edt_deviceName);
         edtDeviceType = (EditText) findViewById(R.id.edt_deviceType);
         edtDevicePrincipal = (EditText) findViewById(R.id.edt_devicePrincipal);
+        edtDeviceId = (EditText)findViewById(R.id.edt_deviceId);
     }
 
     public void addDevice() {
@@ -79,6 +119,9 @@ public class AddDeviceActivity extends AppCompatActivity {
         if (name.isEmpty() || type.isEmpty()) {
             Toast.makeText(this, "信息不能为空", Toast.LENGTH_SHORT).show();
             return;
+        }
+        if(principal.isEmpty()){
+            principal = edtDevicePrincipal.getHint().toString();
         }
         JSONObject jo = new JSONObject();
         try {
