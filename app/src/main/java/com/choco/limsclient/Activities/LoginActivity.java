@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     Handler handler;
     String username;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,7 +80,6 @@ public class LoginActivity extends AppCompatActivity {
         };
         comm.setHandler(handler);
         new Thread(comm).start();
-
     }
 
     private void startNewActivity(String userType) {

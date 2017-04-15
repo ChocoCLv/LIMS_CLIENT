@@ -2,6 +2,7 @@ package com.choco.limsclient.Activities.LabAdmin;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
@@ -10,9 +11,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.choco.limsclient.Activities.QRCode.ScanHelper;
+import com.choco.limsclient.Config.Global;
 import com.choco.limsclient.R;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class UpdateDeviceInfoActivity extends AppCompatActivity {
 
@@ -25,7 +30,7 @@ public class UpdateDeviceInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("更新设备信息");
-        setContentView(R.layout.activity_update_device_info);
+        setContentView(R.layout.activity_labadmin_update_device_info);
         findView();
 
         setOnClickListener(newOnClickListener());
@@ -56,7 +61,23 @@ public class UpdateDeviceInfoActivity extends AppCompatActivity {
     }
 
     private void updateDeviceInfo(){
-        //TODO:发送更新的信息到服务器 包括设备ID
+        String loc = edtCurrentLoc.getText().toString();
+        String status = edtCurrentStatus.getText().toString();
+        if(loc.isEmpty()){
+            Toast.makeText(this, "当前位置不能为空", Toast.LENGTH_SHORT).show();
+        }
+        JSONObject jo = new JSONObject();
+        try{
+            jo.put("CURRENT_LOCATION",loc);
+            jo.put("CURRENT_STATUS",status);
+            Message msg = new Message();
+            msg.what = Global.FROM_LADADMIN_UPDATEDEVICEINFO;
+            msg.obj = jo.toString();
+
+        }catch(JSONException e){
+            e.printStackTrace();
+        }
+
     }
 
     @Override
@@ -66,7 +87,6 @@ public class UpdateDeviceInfoActivity extends AppCompatActivity {
             if (result.getContents() == null) {
                 Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
             } else {
-                //Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();
                 tvDeviceInfo.setText(result.getContents());
             }
         }
@@ -80,6 +100,5 @@ public class UpdateDeviceInfoActivity extends AppCompatActivity {
 
     private void setOnClickListener(View.OnClickListener btnOnClickListener) {
         ivDevice.setOnClickListener(btnOnClickListener);
-
     }
 }
