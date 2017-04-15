@@ -43,7 +43,7 @@ public class AddDeviceActivity extends AppCompatActivity {
 
         setOnClickListener(newOnClickListener());
 
-        edtDevicePrincipal.setHint(userInfo.getUserName());
+        edtDevicePrincipal.setHint(userInfo.getUserId());
 
         comm.setHandler(newHandler());
     }
@@ -108,27 +108,27 @@ public class AddDeviceActivity extends AppCompatActivity {
         btnGenQRCode = (Button) findViewById(R.id.btn_genQR);
         edtDeviceName = (EditText) findViewById(R.id.edt_deviceName);
         edtDeviceType = (EditText) findViewById(R.id.edt_deviceType);
-        edtDevicePrincipal = (EditText) findViewById(R.id.edt_devicePrincipal);
+        edtDevicePrincipal = (EditText) findViewById(R.id.edt_devicePrincipalId);
         edtDeviceId = (EditText)findViewById(R.id.edt_deviceId);
     }
 
     public void addDevice() {
         String name = edtDeviceName.getText().toString();
         String type = edtDeviceType.getText().toString();
-        String principal = edtDevicePrincipal.getText().toString();
+        String principalId = edtDevicePrincipal.getText().toString();
         if (name.isEmpty() || type.isEmpty()) {
             Toast.makeText(this, "信息不能为空", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(principal.isEmpty()){
-            principal = edtDevicePrincipal.getHint().toString();
+        if(principalId.isEmpty()){
+            principalId = edtDevicePrincipal.getHint().toString();
         }
         JSONObject jo = new JSONObject();
         try {
             jo.put("REQUEST_TYPE", "ADD_DEVICE");
             jo.put("DEVICE_NAME", name);
             jo.put("DEVICE_TYPE", type);
-            jo.put("DEVICE_PRINCIPAL", principal);
+            jo.put("DEVICE_PRINCIPAL_ID", principalId);
         } catch (JSONException e) {
             e.printStackTrace();
         }
