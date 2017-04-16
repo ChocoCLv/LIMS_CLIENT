@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.choco.limsclient.Activities.QRCode.ScanActivity;
 import com.choco.limsclient.Activities.QRCode.ScanHelper;
 import com.choco.limsclient.R;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -29,7 +28,7 @@ public class BorrowDeviceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_borrow_device);
+        setContentView(R.layout.activity_student_borrow_device);
 
         findView();
 

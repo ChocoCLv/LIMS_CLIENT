@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.btn_updateDeviceInfo:
                         intent = new Intent(com.choco.limsclient.Activities.LabAdmin.MainActivity.this,
-                                UpdateDeviceInfoActivity.class);
+                                UpdateDeviceStatusActivity.class);
                         startActivity(intent);
                     default:
                         break;
