@@ -16,7 +16,6 @@
   <component name="ChangeListManager">
     <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
@@ -2933,7 +2932,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492347686511</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="修复switch case里的break">
+      <created>1492347759226</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1492347759226</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3072,7 +3078,8 @@
     <MESSAGE value="增加设备所属实验室字段" />
     <MESSAGE value="修改文件命名" />
     <MESSAGE value="向服务器发送更新设备状态的命令" />
-    <option name="LAST_COMMIT_MESSAGE" value="向服务器发送更新设备状态的命令" />
+    <MESSAGE value="修复switch case里的break" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复switch case里的break" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
