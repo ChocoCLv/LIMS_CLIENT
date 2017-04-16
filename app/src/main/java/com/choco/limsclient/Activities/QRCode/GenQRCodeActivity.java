@@ -20,7 +20,9 @@ import java.util.HashMap;
 public class GenQRCodeActivity extends AppCompatActivity {
     String name;
     String type;
-    String principal;
+    String principalId;
+    String id;
+    String qrMsg;
     ImageView qrCodeImageView;
     TextView tvDeviceInfo;
 
@@ -32,13 +34,16 @@ public class GenQRCodeActivity extends AppCompatActivity {
         Intent intent = getIntent();
         name = "设备名称：" + intent.getStringExtra("DEVICE_NAME") + "\n";
         type = "设备类型：" + intent.getStringExtra("DEVICE_TYPE") + "\n";
-        principal = "设备负责人：" + intent.getStringExtra("DEVICE_PRINCIPAL") + "\n";
+        principalId = "设备负责人：" + intent.getStringExtra("DEVICE_PRINCIPAL_ID") + "\n";
+        id = "设备ID："+intent.getStringExtra("DEVICE_ID")+"\n";
+
+        qrMsg = name+type+principalId+id;
 
         qrCodeImageView = (ImageView) findViewById(R.id.iv_qrCode);
-        qrCodeImageView.setImageBitmap(encodeAsBitmap(name + type + principal));
+        qrCodeImageView.setImageBitmap(encodeAsBitmap(qrMsg));
 
         tvDeviceInfo = (TextView) findViewById(R.id.textView_deviceInfo);
-        tvDeviceInfo.setText(name + type + principal);
+        tvDeviceInfo.setText(qrMsg);
     }
 
     public Bitmap encodeAsBitmap(String text) {

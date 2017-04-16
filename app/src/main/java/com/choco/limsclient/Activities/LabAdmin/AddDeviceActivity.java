@@ -30,7 +30,6 @@ public class AddDeviceActivity extends AppCompatActivity {
     EditText edtDeviceId;
     CurrentUserInformation userInfo;
     CommThread comm;
-    String deviceId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +59,7 @@ public class AddDeviceActivity extends AppCompatActivity {
                         String result = resp.getString("ADD_STATUS");
                         if(result.equals("SUCCESS")){
                             Toast.makeText(AddDeviceActivity.this, "添加成功！", Toast.LENGTH_LONG).show();
+                            btnGenQRCode.setEnabled(true);
                         }else{
                             //TODO:返回更多添加失败的原因
                             Toast.makeText(AddDeviceActivity.this, "添加失败！", Toast.LENGTH_LONG).show();
@@ -116,6 +116,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         String name = edtDeviceName.getText().toString();
         String type = edtDeviceType.getText().toString();
         String principalId = edtDevicePrincipal.getText().toString();
+        String deviceId = edtDeviceId.getText().toString();
         if (name.isEmpty() || type.isEmpty()) {
             Toast.makeText(this, "信息不能为空", Toast.LENGTH_SHORT).show();
             return;
@@ -125,6 +126,9 @@ public class AddDeviceActivity extends AppCompatActivity {
         }
         JSONObject jo = new JSONObject();
         try {
+            if(!deviceId.isEmpty()){
+                jo.put("DEVICE_ID",deviceId);
+            }
             jo.put("REQUEST_TYPE", "ADD_DEVICE");
             jo.put("DEVICE_NAME", name);
             jo.put("DEVICE_TYPE", type);
@@ -141,15 +145,20 @@ public class AddDeviceActivity extends AppCompatActivity {
     public void genQRCode() {
         String name = edtDeviceName.getText().toString();
         String type = edtDeviceType.getText().toString();
-        String principal = edtDevicePrincipal.getText().toString();
+        String principalId = edtDevicePrincipal.getText().toString();
+        String id = edtDeviceId.getText().toString();
         if (name.isEmpty() || type.isEmpty()) {
             Toast.makeText(this, "信息不能为空", Toast.LENGTH_SHORT).show();
             return;
         }
+        if(principalId.isEmpty()){
+            principalId = edtDevicePrincipal.getHint().toString();
+        }
         Intent intent = new Intent(AddDeviceActivity.this, GenQRCodeActivity.class);
         intent.putExtra("DEVICE_NAME", name);
         intent.putExtra("DEVICE_TYPE", type);
-        intent.putExtra("DEVICE_PRINCIPAL", principal);
+        intent.putExtra("DEVICE_PRINCIPAL_ID", principalId);
+        intent.putExtra("DEVICE_ID",id);
         startActivity(intent);
     }
 }
