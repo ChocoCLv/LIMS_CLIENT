@@ -28,6 +28,7 @@ public class AddDeviceActivity extends AppCompatActivity {
     EditText edtDeviceType;
     EditText edtDevicePrincipal;
     EditText edtDeviceId;
+    EditText edtDeviceBelongTo;
     CurrentUserInformation userInfo;
     CommThread comm;
 
@@ -110,6 +111,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         edtDeviceType = (EditText) findViewById(R.id.edt_deviceType);
         edtDevicePrincipal = (EditText) findViewById(R.id.edt_devicePrincipalId);
         edtDeviceId = (EditText)findViewById(R.id.edt_deviceId);
+        edtDeviceBelongTo =(EditText)findViewById(R.id.edt_deviceBelongTo);
     }
 
     public void addDevice() {
@@ -117,6 +119,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         String type = edtDeviceType.getText().toString();
         String principalId = edtDevicePrincipal.getText().toString();
         String deviceId = edtDeviceId.getText().toString();
+        String deviceBelongTo = edtDeviceBelongTo.getText().toString();
         if (name.isEmpty() || type.isEmpty()) {
             Toast.makeText(this, "信息不能为空", Toast.LENGTH_SHORT).show();
             return;
@@ -133,6 +136,7 @@ public class AddDeviceActivity extends AppCompatActivity {
             jo.put("DEVICE_NAME", name);
             jo.put("DEVICE_TYPE", type);
             jo.put("DEVICE_PRINCIPAL_ID", principalId);
+            jo.put("DEVICE_BELONG_TO",deviceBelongTo);
         } catch (JSONException e) {
             e.printStackTrace();
         }

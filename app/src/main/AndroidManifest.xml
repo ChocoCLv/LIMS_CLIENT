@@ -31,7 +31,7 @@
         <activity android:name=".Activities.LabAdmin.AddDeviceActivity" />
         <activity android:name=".Activities.QRCode.GenQRCodeActivity" />
         <activity android:name=".Activities.Student.BorrowDeviceActivity" />
-        <activity android:name=".Activities.LabAdmin.UpdateDeviceInfoActivity"></activity>
+        <activity android:name=".Activities.LabAdmin.UpdateDeviceStatusActivity"></activity>
     </application>
 
 </manifest>
