@@ -96,6 +96,7 @@ public class AddDeviceActivity extends AppCompatActivity {
                         break;
                     case R.id.btn_genQR:
                         genQRCode();
+                        break;
                     default:
                         break;
                 }
