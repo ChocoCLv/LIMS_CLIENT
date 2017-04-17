@@ -9,7 +9,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
 
-import com.choco.limsclient.Config.Global;
+import com.choco.limsclient.Util.Global;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

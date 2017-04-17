@@ -12,8 +12,8 @@ import android.widget.Toast;
 
 import com.choco.limsclient.Activities.QRCode.GenQRCodeActivity;
 import com.choco.limsclient.CommModule.CommThread;
-import com.choco.limsclient.Config.CurrentUserInformation;
-import com.choco.limsclient.Config.Global;
+import com.choco.limsclient.Util.CurrentUserInformation;
+import com.choco.limsclient.Util.Global;
 import com.choco.limsclient.R;
 
 import org.json.JSONException;

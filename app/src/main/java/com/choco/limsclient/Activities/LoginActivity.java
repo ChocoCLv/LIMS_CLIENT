@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.choco.limsclient.CommModule.CommThread;
-import com.choco.limsclient.Config.Global;
+import com.choco.limsclient.Util.Global;
 import com.choco.limsclient.R;
 
 import org.json.JSONException;
@@ -21,7 +21,7 @@ import org.json.JSONTokener;
 
 import java.util.HashMap;
 
-import static com.choco.limsclient.Config.Global.userInfo;
+import static com.choco.limsclient.Util.Global.userInfo;
 
 public class LoginActivity extends AppCompatActivity {
 

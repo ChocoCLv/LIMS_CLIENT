@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.choco.limsclient.R;
 
-import static com.choco.limsclient.Config.Global.userInfo;
+import static com.choco.limsclient.Util.Global.userInfo;
 
 public class MainActivity extends AppCompatActivity {
     Button btnBorrowDevice;

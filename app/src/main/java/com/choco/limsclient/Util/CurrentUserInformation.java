@@ -1,4 +1,4 @@
-package com.choco.limsclient.Config;
+package com.choco.limsclient.Util;
 
 /**
  * Created by choco on 2017/4/13.
