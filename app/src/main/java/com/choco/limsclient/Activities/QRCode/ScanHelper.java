@@ -9,7 +9,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
  */
 
 public class ScanHelper {
-    public void scanQRCode(Activity activity){
+    public void scanQRCode(Activity activity) {
         IntentIntegrator intentIntegrator = new IntentIntegrator(activity);
         intentIntegrator.setCaptureActivity(ScanActivity.class);
         intentIntegrator.initiateScan();

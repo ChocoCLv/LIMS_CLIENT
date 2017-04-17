@@ -64,7 +64,7 @@ public class BorrowDeviceActivity extends AppCompatActivity {
         sh.scanQRCode(this);
     }
 
-    private void borrowDevice(){
+    private void borrowDevice() {
         //TODO:向服务器发送借入请求 登记本次借入记录
 
     }

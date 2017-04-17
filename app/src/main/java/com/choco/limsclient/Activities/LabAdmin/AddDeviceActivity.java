@@ -48,7 +48,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         comm.setHandler(newHandler());
     }
 
-    public Handler newHandler(){
+    public Handler newHandler() {
         Handler handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -58,21 +58,21 @@ public class AddDeviceActivity extends AppCompatActivity {
                         JSONTokener jsonParser = new JSONTokener(msg.obj.toString());
                         resp = (JSONObject) jsonParser.nextValue();
                         String result = resp.getString("ADD_STATUS");
-                        if(result.equals("SUCCESS")){
+                        if (result.equals("SUCCESS")) {
                             Toast.makeText(AddDeviceActivity.this, "添加成功！", Toast.LENGTH_LONG).show();
                             btnGenQRCode.setEnabled(true);
-                        }else{
+                        } else {
                             //TODO:返回更多添加失败的原因
                             Toast.makeText(AddDeviceActivity.this, "添加失败！", Toast.LENGTH_LONG).show();
                         }
-                    }catch (JSONException e){
+                    } catch (JSONException e) {
                         e.printStackTrace();
                         return;
                     }
-                    try{
+                    try {
                         String device_id = resp.getString("DEVICE_ID");
                         edtDeviceId.setText(device_id);
-                    }catch (JSONException e){
+                    } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
@@ -81,12 +81,12 @@ public class AddDeviceActivity extends AppCompatActivity {
         return handler;
     }
 
-    public void setOnClickListener(View.OnClickListener listener){
+    public void setOnClickListener(View.OnClickListener listener) {
         btnAddDevice.setOnClickListener(listener);
         btnGenQRCode.setOnClickListener(listener);
     }
 
-    public View.OnClickListener newOnClickListener(){
+    public View.OnClickListener newOnClickListener() {
         View.OnClickListener btnOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -111,8 +111,8 @@ public class AddDeviceActivity extends AppCompatActivity {
         edtDeviceName = (EditText) findViewById(R.id.edt_deviceName);
         edtDeviceType = (EditText) findViewById(R.id.edt_deviceType);
         edtDevicePrincipal = (EditText) findViewById(R.id.edt_devicePrincipalId);
-        edtDeviceId = (EditText)findViewById(R.id.edt_deviceId);
-        edtDeviceBelongTo =(EditText)findViewById(R.id.edt_deviceBelongTo);
+        edtDeviceId = (EditText) findViewById(R.id.edt_deviceId);
+        edtDeviceBelongTo = (EditText) findViewById(R.id.edt_deviceBelongTo);
     }
 
     public void addDevice() {
@@ -125,19 +125,19 @@ public class AddDeviceActivity extends AppCompatActivity {
             Toast.makeText(this, "信息不能为空", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(principalId.isEmpty()){
+        if (principalId.isEmpty()) {
             principalId = edtDevicePrincipal.getHint().toString();
         }
         JSONObject jo = new JSONObject();
         try {
-            if(!deviceId.isEmpty()){
-                jo.put("DEVICE_ID",deviceId);
+            if (!deviceId.isEmpty()) {
+                jo.put("DEVICE_ID", deviceId);
             }
             jo.put("REQUEST_TYPE", "ADD_DEVICE");
             jo.put("DEVICE_NAME", name);
             jo.put("DEVICE_TYPE", type);
             jo.put("DEVICE_PRINCIPAL_ID", principalId);
-            jo.put("DEVICE_BELONG_TO",deviceBelongTo);
+            jo.put("DEVICE_BELONG_TO", deviceBelongTo);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -156,14 +156,14 @@ public class AddDeviceActivity extends AppCompatActivity {
             Toast.makeText(this, "信息不能为空", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(principalId.isEmpty()){
+        if (principalId.isEmpty()) {
             principalId = edtDevicePrincipal.getHint().toString();
         }
         Intent intent = new Intent(AddDeviceActivity.this, GenQRCodeActivity.class);
         intent.putExtra("DEVICE_NAME", name);
         intent.putExtra("DEVICE_TYPE", type);
         intent.putExtra("DEVICE_PRINCIPAL_ID", principalId);
-        intent.putExtra("DEVICE_ID",id);
+        intent.putExtra("DEVICE_ID", id);
         startActivity(intent);
     }
 }

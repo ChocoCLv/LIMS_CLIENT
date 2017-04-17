@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setOnClickListener(newOnClickListener());
     }
 
-    private View.OnClickListener newOnClickListener(){
+    private View.OnClickListener newOnClickListener() {
         View.OnClickListener btnOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         return btnOnClickListener;
     }
 
-    private void setOnClickListener(View.OnClickListener btnOnClickListener){
+    private void setOnClickListener(View.OnClickListener btnOnClickListener) {
         btnAddDevice.setOnClickListener(btnOnClickListener);
         btnLendDevice.setOnClickListener(btnOnClickListener);
         btnUpdateDeviceInfo.setOnClickListener(btnOnClickListener);
@@ -63,6 +63,6 @@ public class MainActivity extends AppCompatActivity {
     private void findView() {
         btnLendDevice = (Button) findViewById(R.id.btn_lendDevice);
         btnAddDevice = (Button) findViewById(R.id.btn_addDevice);
-        btnUpdateDeviceInfo = (Button)findViewById(R.id.btn_updateDeviceInfo);
+        btnUpdateDeviceInfo = (Button) findViewById(R.id.btn_updateDeviceInfo);
     }
 }

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -53,9 +52,8 @@ public class UpdateDeviceStatusActivity extends AppCompatActivity {
         tvDeviceInfo = (TextView) findViewById(R.id.tv_deviceInfo);
         edtCurrentLoc = (EditText) findViewById(R.id.edt_currentLoc);
         edtCurrentStatus = (EditText) findViewById(R.id.edt_currentStatus);
-        edtComments = (EditText)findViewById(R.id.edt_comments);
-        btnConfirmUpdate = (Button)findViewById(R.id.btn_confirmUpdate);
-
+        edtComments = (EditText) findViewById(R.id.edt_comments);
+        btnConfirmUpdate = (Button) findViewById(R.id.btn_confirmUpdate);
     }
 
     private View.OnClickListener newOnClickListener() {
@@ -77,25 +75,25 @@ public class UpdateDeviceStatusActivity extends AppCompatActivity {
         return btnOnClickListener;
     }
 
-    private void updateDeviceStatus(){
+    private void updateDeviceStatus() {
         String loc = edtCurrentLoc.getText().toString();
         String status = edtCurrentStatus.getText().toString();
         String comments = edtComments.getText().toString();
-        if(loc.isEmpty()){
+        if (loc.isEmpty()) {
             Toast.makeText(this, "当前位置不能为空", Toast.LENGTH_SHORT).show();
         }
         JSONObject jo = new JSONObject();
-        try{
-            jo.put("REQUEST_TYPE","UPDATE_DEVICE_STATUS");
-            jo.put("DEVICE_CURRENT_LOCATION",loc);
-            jo.put("DEVICE_CURRENT_STATUS",status);
-            jo.put("DEVICE_COMMENTS",comments);
-            jo.put("DEVICE_ID",deviceId);
+        try {
+            jo.put("REQUEST_TYPE", "UPDATE_DEVICE_STATUS");
+            jo.put("DEVICE_CURRENT_LOCATION", loc);
+            jo.put("DEVICE_CURRENT_STATUS", status);
+            jo.put("DEVICE_COMMENTS", comments);
+            jo.put("DEVICE_ID", deviceId);
             Message msg = new Message();
             msg.what = Global.FROM_LADADMIN_UPDATEDEVICEINFO;
             msg.obj = jo.toString();
             comm.commHandler.sendMessage(msg);
-        }catch(JSONException e){
+        } catch (JSONException e) {
             e.printStackTrace();
         }
 
@@ -126,7 +124,7 @@ public class UpdateDeviceStatusActivity extends AppCompatActivity {
         btnConfirmUpdate.setOnClickListener(btnOnClickListener);
     }
 
-    public Handler newHandler(){
+    public Handler newHandler() {
         Handler handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -136,10 +134,10 @@ public class UpdateDeviceStatusActivity extends AppCompatActivity {
                         JSONTokener jsonParser = new JSONTokener(msg.obj.toString());
                         resp = (JSONObject) jsonParser.nextValue();
                         String result = resp.getString("UPDATE_STATUS");
-                        if(result.equals("SUCCESS")){
+                        if (result.equals("SUCCESS")) {
                             Toast.makeText(UpdateDeviceStatusActivity.this, "更新成功", Toast.LENGTH_SHORT).show();
                         }
-                    }catch (JSONException e){
+                    } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
