@@ -15,14 +15,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/CurrentUserInformation.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/CurrentUserInformation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/Global.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,13 +53,26 @@
       <file leaf-file-name="BorrowDeviceActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+            <state relative-caret-position="318">
+              <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#findView#0;class#BorrowDeviceActivity#0" expanded="false" />
+                <element signature="method#scanDeviceQR#0;class#BorrowDeviceActivity#0" expanded="false" />
+                <element signature="method#onActivityResult#0;class#BorrowDeviceActivity#0" expanded="false" />
                 <element signature="method#checkPermissions#0;class#BorrowDeviceActivity#0" expanded="false" />
                 <element signature="method#onRequestPermissionsResult#0;class#BorrowDeviceActivity#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Global.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,8 +93,8 @@
       <file leaf-file-name="UpdateDeviceStatusActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceStatusActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state relative-caret-position="171">
+              <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="146" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onCreate#0;class#UpdateDeviceStatusActivity#0" expanded="false" />
@@ -101,6 +110,21 @@
             <state relative-caret-position="456">
               <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#CommThread#0" expanded="false" />
+                <element signature="method#CommThread#0;class#CommThread#0" expanded="false" />
+                <element signature="method#setHandler#0;class#CommThread#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1957,7 +1981,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/StudentMainActivity.java" />
         <option value="$USER_HOME$/AppData/Local/Android/sdk/platforms/android-25/android.jar!/java/lang/Class.class" />
         <option value="$PROJECT_DIR$/local.properties" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/CaptureActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/google/zxing/client/android/CaptureActivity.java" />
         <option value="$PROJECT_DIR$/zxing/src/main/AndroidManifest.xml" />
@@ -1991,7 +2014,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_update_device_info.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Config/Global.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceInfoActivity.java" />
@@ -1999,9 +2021,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_update_device_info.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceStatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/StringParseHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
       </list>
     </option>
   </component>
@@ -2137,6 +2161,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="limsclient" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CommModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2993,7 +3021,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492398164561</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="修改包名">
+      <created>1492398210936</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1492398210936</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3014,7 +3049,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22206704" sideWeight="0.504298" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22206704" sideWeight="0.504298" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18994413" sideWeight="0.5730659" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22625698" sideWeight="0.484957" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3108,7 +3143,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="配置zxing为二维码扫描" />
     <MESSAGE value="定制zxing" />
     <MESSAGE value="在gradle中compile zxing的相关文件 通过继承CaputureActivity的方式来改写扫描界面" />
     <MESSAGE value="添加管理员界面" />
@@ -3133,11 +3167,12 @@
     <MESSAGE value="在发送数据的判断里增加来自UpdateDeviceStatus的选项" />
     <MESSAGE value="格式化代码" />
     <MESSAGE value="提取字符串处理方法 从设备信息中提取某些数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="提取字符串处理方法 从设备信息中提取某些数据" />
+    <MESSAGE value="修改包名" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改包名" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3344,14 +3379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_update_device_info.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3380,19 +3407,6 @@
           <caret line="144" column="50" selection-start-line="144" selection-start-column="50" selection-end-line="144" selection-end-column="50" />
           <folding>
             <element signature="method#newHandler#0;class#AddDeviceActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="90" column="93" selection-start-line="90" selection-start-column="93" selection-end-line="90" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#CommThread#0" expanded="false" />
-            <element signature="method#CommThread#0;class#CommThread#0" expanded="false" />
-            <element signature="method#setHandler#0;class#CommThread#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3449,17 +3463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_borrow_device.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/CurrentUserInformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -3476,10 +3479,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_borrow_device.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceStatusActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        <state relative-caret-position="171">
+          <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="146" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#UpdateDeviceStatusActivity#0" expanded="false" />
@@ -3488,12 +3510,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CommThread#0" expanded="false" />
+            <element signature="method#CommThread#0;class#CommThread#0" expanded="false" />
+            <element signature="method#setHandler#0;class#CommThread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+        <state relative-caret-position="318">
+          <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#findView#0;class#BorrowDeviceActivity#0" expanded="false" />
+            <element signature="method#scanDeviceQR#0;class#BorrowDeviceActivity#0" expanded="false" />
+            <element signature="method#onActivityResult#0;class#BorrowDeviceActivity#0" expanded="false" />
             <element signature="method#checkPermissions#0;class#BorrowDeviceActivity#0" expanded="false" />
             <element signature="method#onRequestPermissionsResult#0;class#BorrowDeviceActivity#0" expanded="false" />
           </folding>

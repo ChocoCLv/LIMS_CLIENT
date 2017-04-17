@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -13,10 +15,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.choco.limsclient.Activities.LabAdmin.UpdateDeviceStatusActivity;
 import com.choco.limsclient.Activities.QRCode.ScanHelper;
+import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
+import com.choco.limsclient.Util.CurrentUserInformation;
+import com.choco.limsclient.Util.Global;
+import com.choco.limsclient.Util.StringParseHelper;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 
 public class BorrowDeviceActivity extends AppCompatActivity {
 
@@ -24,6 +35,8 @@ public class BorrowDeviceActivity extends AppCompatActivity {
     Button btnConfirmBorrow;
     TextView tvDeviceInfo;
     String permissions[] = {"android.permission.CAMERA"};
+    String deviceInfo;
+    String deviceId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +45,62 @@ public class BorrowDeviceActivity extends AppCompatActivity {
 
         findView();
 
-        View.OnClickListener onClickListener = new View.OnClickListener() {
+        CommThread.getInstance().setHandler(newHandler());
+
+        setOnClickListener(newOnClickListener());
+    }
+
+    private void findView() {
+        ivDevicePic = (ImageView) findViewById(R.id.iv_devicePic);
+        btnConfirmBorrow = (Button) findViewById(R.id.btn_confirmBorrow);
+        tvDeviceInfo = (TextView) findViewById(R.id.tv_deviceInfo);
+    }
+
+    private void scanDeviceQR() {
+        ScanHelper sh = new ScanHelper();
+        sh.scanQRCode(this);
+    }
+
+    private void borrowDevice() {
+        //TODO:向服务器发送借入请求 登记本次借入记录
+        JSONObject jo = new JSONObject();
+        try {
+            jo.put("REQUEST_TYPE", "BORROW_DEVICE");
+            jo.put("STUDENT_ID",CurrentUserInformation.getInstance().getUserId());
+            jo.put("DEVICE_ID",deviceId);
+            Message msg = new Message();
+            msg.what = Global.FROM_STUDENT_BORROWDEVICE;
+            msg.obj = jo.toString();
+            CommThread.getInstance().commHandler.sendMessage(msg);
+        }catch (JSONException e){
+            e.printStackTrace();
+        }
+    }
+
+    private Handler newHandler(){
+        Handler handler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                if (msg.what == Global.FROM_COMMTHREAD) {
+                    JSONObject resp;
+                    try {
+                        JSONTokener jsonParser = new JSONTokener(msg.obj.toString());
+                        resp = (JSONObject) jsonParser.nextValue();
+                        String result = resp.getString("BORROW_STATUS");
+                        if (result.equals("SUCCESS")) {
+                            Toast.makeText(BorrowDeviceActivity.this, "借入登记成功", Toast.LENGTH_SHORT).show();
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+        return handler;
+    }
+
+    private View.OnClickListener newOnClickListener(){
+        View.OnClickListener btnOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
@@ -49,24 +117,12 @@ public class BorrowDeviceActivity extends AppCompatActivity {
                 }
             }
         };
-        ivDevicePic.setOnClickListener(onClickListener);
-        btnConfirmBorrow.setOnClickListener(onClickListener);
+        return btnOnClickListener;
     }
 
-    private void findView() {
-        ivDevicePic = (ImageView) findViewById(R.id.iv_devicePic);
-        btnConfirmBorrow = (Button) findViewById(R.id.btn_confirmBorrow);
-        tvDeviceInfo = (TextView) findViewById(R.id.tv_deviceInfo);
-    }
-
-    private void scanDeviceQR() {
-        ScanHelper sh = new ScanHelper();
-        sh.scanQRCode(this);
-    }
-
-    private void borrowDevice() {
-        //TODO:向服务器发送借入请求 登记本次借入记录
-
+    private void setOnClickListener(View.OnClickListener btnOnClickListener){
+        ivDevicePic.setOnClickListener(btnOnClickListener);
+        btnConfirmBorrow.setOnClickListener(btnOnClickListener);
     }
 
     @Override
@@ -76,8 +132,9 @@ public class BorrowDeviceActivity extends AppCompatActivity {
             if (result.getContents() == null) {
                 Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
             } else {
-                //Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();
-                tvDeviceInfo.setText(result.getContents());
+                deviceInfo = result.getContents();
+                tvDeviceInfo.setText(deviceInfo);
+                deviceId = StringParseHelper.getDeviceIdFromDeviceInfo(deviceInfo);
             }
         }
     }
