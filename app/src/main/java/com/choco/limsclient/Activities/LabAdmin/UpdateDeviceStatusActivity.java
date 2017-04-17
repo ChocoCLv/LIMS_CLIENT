@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.choco.limsclient.Activities.QRCode.ScanHelper;
 import com.choco.limsclient.CommModule.CommThread;
-import com.choco.limsclient.Config.Global;
+import com.choco.limsclient.Util.Global;
 import com.choco.limsclient.R;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -22,6 +22,8 @@ import com.google.zxing.integration.android.IntentResult;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
+
+import com.choco.limsclient.Util.StringParseHelper;
 
 public class UpdateDeviceStatusActivity extends AppCompatActivity {
 
@@ -108,8 +110,7 @@ public class UpdateDeviceStatusActivity extends AppCompatActivity {
             } else {
                 deviceInfo = result.getContents();
                 tvDeviceInfo.setText(deviceInfo);
-                String[] res = deviceInfo.split("\\n");
-                deviceId = res[3].split("：")[1];
+                deviceId = StringParseHelper.getDeviceIdFromDeviceInfo(deviceInfo);
             }
         }
     }
