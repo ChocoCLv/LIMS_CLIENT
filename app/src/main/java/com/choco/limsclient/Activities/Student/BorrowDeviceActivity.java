@@ -2,12 +2,9 @@ package com.choco.limsclient.Activities.Student;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.choco.limsclient.Activities.LabAdmin.UpdateDeviceStatusActivity;
 import com.choco.limsclient.Activities.QRCode.ScanHelper;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
@@ -34,7 +30,7 @@ public class BorrowDeviceActivity extends AppCompatActivity {
     ImageView ivDevicePic;
     Button btnConfirmBorrow;
     TextView tvDeviceInfo;
-    String permissions[] = {"android.permission.CAMERA"};
+
     String deviceInfo;
     String deviceId;
 
@@ -62,7 +58,6 @@ public class BorrowDeviceActivity extends AppCompatActivity {
     }
 
     private void borrowDevice() {
-        //TODO:向服务器发送借入请求 登记本次借入记录
         JSONObject jo = new JSONObject();
         try {
             jo.put("REQUEST_TYPE", "BORROW_DEVICE");
@@ -105,9 +100,7 @@ public class BorrowDeviceActivity extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.iv_devicePic:
-                        if (checkPermissions()) {
-                            scanDeviceQR();
-                        }
+                        scanDeviceQR();
                         break;
                     case R.id.btn_confirmBorrow:
                         borrowDevice();
@@ -136,46 +129,6 @@ public class BorrowDeviceActivity extends AppCompatActivity {
                 tvDeviceInfo.setText(deviceInfo);
                 deviceId = StringParseHelper.getDeviceIdFromDeviceInfo(deviceInfo);
             }
-        }
-    }
-
-    private boolean checkPermissions() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            for (String permission : permissions) {
-                // 检查该权限是否已经获取
-                int i = ContextCompat.checkSelfPermission(this, permission);
-                // 权限是否已经 授权 GRANTED---授权  DINIED---拒绝
-                if (i != PackageManager.PERMISSION_GRANTED) {
-                    // 如果没有授予该权限，就去提示用户请求  异步方法 调用后即返回
-                    ActivityCompat.requestPermissions(this, permissions, 321);
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
-    @Override
-    public void onRequestPermissionsResult(
-            int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case 321: {
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    scanDeviceQR();
-
-                } else {
-
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                }
-                return;
-            }
-
-            // other 'case' lines to check for other
-            // permissions this app might request
         }
     }
 }
