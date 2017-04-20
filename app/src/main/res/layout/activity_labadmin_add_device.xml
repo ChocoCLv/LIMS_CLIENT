@@ -13,12 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="设备名称："
-        android:layout_marginStart="33dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/edt_deviceName"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="33dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
         android:id="@+id/edt_deviceName"
@@ -28,12 +26,11 @@
         android:hint="必填"
         android:inputType="textPersonName"
         android:layout_marginEnd="59dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="49dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="59dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintLeft_toRightOf="@+id/textView6"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/textView7"
@@ -41,11 +38,13 @@
         android:layout_height="wrap_content"
         android:text="设备类型："
         android:layout_marginStart="33dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/edt_deviceType"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="33dp" />
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView6"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
         android:id="@+id/edt_deviceType"
@@ -55,25 +54,24 @@
         android:ems="10"
         android:hint="必填"
         android:inputType="textPersonName"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="29dp"
-        app:layout_constraintTop_toBottomOf="@+id/edt_deviceName"
-        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/edt_deviceName"
-        android:layout_marginLeft="3dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/edt_deviceName" />
 
     <Button
         android:id="@+id/btn_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="添加"
-        android:layout_marginStart="17dp"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="9dp"
-        app:layout_constraintTop_toBottomOf="@+id/edt_deviceBelongTo"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toRightOf="@+id/textView8"
-        android:layout_marginLeft="17dp" />
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_genQR"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.498" />
 
     <TextView
         android:id="@+id/textView"
@@ -81,11 +79,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
         android:text="负责人ID："
-        app:layout_constraintBaseline_toBaselineOf="@+id/edt_devicePrincipalId"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="33dp" />
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView7"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <EditText
         android:id="@+id/edt_devicePrincipalId"
@@ -94,13 +94,12 @@
         android:ems="10"
         android:hint="必填"
         android:inputType="number"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/edt_deviceId"
-        android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/edt_deviceType"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/edt_deviceId" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/edt_deviceType"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/edt_deviceType"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
         android:id="@+id/btn_genQR"
@@ -109,13 +108,13 @@
         android:enabled="false"
         android:text="生成二维码"
         tools:enabled="false"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="35dp"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintHorizontal_bias="0.498" />
 
     <TextView
         android:id="@+id/textView2"
@@ -123,11 +122,13 @@
         android:layout_height="wrap_content"
         android:text="设备ID："
         android:layout_marginStart="33dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/edt_deviceId"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="33dp" />
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <EditText
         android:id="@+id/edt_deviceId"
@@ -137,37 +138,73 @@
         android:ems="10"
         android:hint="选填"
         android:inputType="number"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/edt_deviceBelongTo"
-        android:layout_marginTop="29dp"
-        app:layout_constraintTop_toBottomOf="@+id/edt_devicePrincipalId"
-        android:layout_marginRight="7dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/edt_devicePrincipalId"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/edt_devicePrincipalId" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="设备所属实验室："
-        tools:layout_constraintRight_creator="1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="50dp"
+        android:text="设备位置："
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/textView2"
         app:layout_constraintRight_toRightOf="@+id/textView2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/edt_deviceBelongTo"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toRightOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/edt_deviceBelongTo"
+        android:id="@+id/edt_deviceLocDefault"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="选填"
         android:inputType="textPersonName"
-        app:layout_constraintLeft_toRightOf="@+id/btn_add"
-        app:layout_constraintRight_toRightOf="@+id/btn_add"
-        app:layout_constraintTop_toBottomOf="@+id/edt_deviceId"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintLeft_toLeftOf="@+id/edt_deviceId"
+        app:layout_constraintRight_toRightOf="@+id/edt_deviceId" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设备照片："
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView8"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView8"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/edt_devicePhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/edt_deviceLocDefault"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/edt_deviceLocDefault" />
+
+    <ImageButton
+        android:id="@+id/ib_takeDevicePhoto"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/zxing_transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_devicePhotos"
+        app:layout_constraintLeft_toRightOf="@+id/edt_devicePhotos"
+        app:layout_constraintTop_toTopOf="@+id/edt_devicePhotos"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_add" />
 </android.support.constraint.ConstraintLayout>

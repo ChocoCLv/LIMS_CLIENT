@@ -17,8 +17,6 @@
     <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
@@ -54,10 +52,10 @@
       <file leaf-file-name="BorrowDeviceActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
+            <state relative-caret-position="1406">
               <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
                 <element signature="method#findView#0;class#BorrowDeviceActivity#0" expanded="false" />
                 <element signature="method#setOnClickListener#0;class#BorrowDeviceActivity#0" expanded="false" />
               </folding>
@@ -68,11 +66,12 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
+            <state relative-caret-position="836">
               <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
               <folding>
-                <element signature="e#1353#1497#0" expanded="true" />
-                <element signature="e#1496#1497#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1447#1448#0" expanded="false" />
+                <element signature="e#1486#1487#0" expanded="false" />
                 <element signature="method#startNewActivity#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#login#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#findView#0;class#LoginActivity#0" expanded="false" />
@@ -86,20 +85,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
               <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddDeviceActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddDeviceActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state relative-caret-position="415">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
                 <element signature="method#newHandler#0;class#AddDeviceActivity#0" expanded="false" />
-                <element signature="method#findView#0;class#AddDeviceActivity#0" expanded="false" />
-                <element signature="method#addDevice#0;class#AddDeviceActivity#0" expanded="false" />
                 <element signature="method#genQRCode#0;class#AddDeviceActivity#0" expanded="false" />
               </folding>
             </state>
@@ -116,24 +115,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_labadmin_add_device.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity_labadmin_add_device.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state relative-caret-position="551">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding />
             </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="R.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/choco/limsclient/R.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="3384" column="34" selection-start-line="3384" selection-start-column="34" selection-end-line="3384" selection-end-column="34" />
+            <state relative-caret-position="64144">
+              <caret line="3381" column="34" selection-start-line="3381" selection-start-column="34" selection-end-line="3381" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -152,9 +151,10 @@
       <file leaf-file-name="CommThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1444">
+            <state relative-caret-position="1254">
               <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="docComment;class#CommThread#0" expanded="false" />
                 <element signature="method#CommThread#0;class#CommThread#0" expanded="false" />
                 <element signature="method#setHandler#0;class#CommThread#0" expanded="false" />
@@ -2057,11 +2057,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" />
         <option value="$PROJECT_DIR$/app/build/generated/source/r/debug/com/choco/limsclient/R.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/RequestPermissionHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml" />
       </list>
     </option>
   </component>
@@ -2096,6 +2096,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2104,176 +2110,9 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="limsclient" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="limsclient" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="limsclient" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="limsclient" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="limsclient" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QRCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LIMS_CLIENT" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="limsclient" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LabAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane />
       </pane>
       <pane id="Scope">
@@ -2369,9 +2208,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -3049,10 +2885,10 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19692737" sideWeight="0.5766476" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19413407" sideWeight="0.5766476" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18994413" sideWeight="0.5730659" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22625698" sideWeight="0.484957" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3062,8 +2898,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26150945" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5363129" sideWeight="0.4971367" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5363129" sideWeight="0.4971367" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3200,13 +3036,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_lenddevice.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.journeyapps/zxing-android-embedded/3.2.0/654ff6a321869736de94c3fcd9c9a14184f61a3c/zxing-android-embedded-3.2.0-sources.jar!/com/google/zxing/integration/android/IntentIntegrator.java">
@@ -3326,47 +3162,44 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gen_qrcode.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gen_qrcode.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeHintManager.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-          <folding>
-            <element signature="e#340#375#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_main.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zxing/src/main/java/com/google/zxing/client/android/DecodeHintManager.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_main.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="40" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java">
@@ -3377,14 +3210,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_update_device_info.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/GenQRCodeActivity.java">
@@ -3428,7 +3260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3445,9 +3276,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
+        <state relative-caret-position="1254">
           <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#CommThread#0" expanded="false" />
             <element signature="method#CommThread#0;class#CommThread#0" expanded="false" />
             <element signature="method#setHandler#0;class#CommThread#0" expanded="false" />
@@ -3456,14 +3288,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_borrow_device.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java">
@@ -3476,20 +3307,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/choco/limsclient/R.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="3384" column="34" selection-start-line="3384" selection-start-column="34" selection-end-line="3384" selection-end-column="34" />
+        <state relative-caret-position="64144">
+          <caret line="3381" column="34" selection-start-line="3381" selection-start-column="34" selection-end-line="3381" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-          <folding />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/RequestPermissionHelper.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1447#1448#0" expanded="false" />
+            <element signature="e#1486#1487#0" expanded="false" />
+            <element signature="method#startNewActivity#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#login#0;class#LoginActivity#0" expanded="false" />
+            <element signature="method#findView#0;class#LoginActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#findView#0;class#BorrowDeviceActivity#0" expanded="false" />
+            <element signature="method#setOnClickListener#0;class#BorrowDeviceActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3501,67 +3366,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/RequestPermissionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
-          <folding>
-            <element signature="e#1353#1497#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="method#startNewActivity#0;class#LoginActivity#0" expanded="false" />
-            <element signature="method#login#0;class#LoginActivity#0" expanded="false" />
-            <element signature="method#findView#0;class#LoginActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#findView#0;class#BorrowDeviceActivity#0" expanded="false" />
-            <element signature="method#setOnClickListener#0;class#BorrowDeviceActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state relative-caret-position="415">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding>
             <element signature="method#newHandler#0;class#AddDeviceActivity#0" expanded="false" />
-            <element signature="method#findView#0;class#AddDeviceActivity#0" expanded="false" />
-            <element signature="method#addDevice#0;class#AddDeviceActivity#0" expanded="false" />
             <element signature="method#genQRCode#0;class#AddDeviceActivity#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
