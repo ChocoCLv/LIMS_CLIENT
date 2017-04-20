@@ -1,20 +1,25 @@
 package com.choco.limsclient.Activities.LabAdmin;
 
+import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.choco.limsclient.Activities.QRCode.GenQRCodeActivity;
 import com.choco.limsclient.CommModule.CommThread;
+import com.choco.limsclient.R;
 import com.choco.limsclient.Util.CurrentUserInformation;
 import com.choco.limsclient.Util.Global;
-import com.choco.limsclient.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,8 +27,10 @@ import org.json.JSONTokener;
 
 public class AddDeviceActivity extends AppCompatActivity {
 
+    private static final int REQUEST_IMAGE_CAPTURE = 1;
     Button btnAddDevice;
     Button btnGenQRCode;
+    ImageButton ibTakeDevicePhotos;
     EditText edtDeviceName;
     EditText edtDeviceType;
     EditText edtDevicePrincipal;
@@ -48,7 +55,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         comm.setHandler(newHandler());
     }
 
-    public Handler newHandler() {
+    private Handler newHandler() {
         Handler handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -81,12 +88,13 @@ public class AddDeviceActivity extends AppCompatActivity {
         return handler;
     }
 
-    public void setOnClickListener(View.OnClickListener listener) {
+    private void setOnClickListener(View.OnClickListener listener) {
         btnAddDevice.setOnClickListener(listener);
         btnGenQRCode.setOnClickListener(listener);
+        ibTakeDevicePhotos.setOnClickListener(listener);
     }
 
-    public View.OnClickListener newOnClickListener() {
+    private View.OnClickListener newOnClickListener() {
         View.OnClickListener btnOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,6 +105,9 @@ public class AddDeviceActivity extends AppCompatActivity {
                     case R.id.btn_genQR:
                         genQRCode();
                         break;
+                    case R.id.ib_takeDevicePhoto:
+                        takeDevicePhotos();
+                        break;
                     default:
                         break;
                 }
@@ -105,9 +116,35 @@ public class AddDeviceActivity extends AppCompatActivity {
         return btnOnClickListener;
     }
 
-    public void findView() {
+    private void takeDevicePhotos() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        ContentValues values = new ContentValues();
+        Uri mPhotoUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+        takePictureIntent.putExtra(android.provider.MediaStore.EXTRA_OUTPUT, mPhotoUri);
+        startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case REQUEST_IMAGE_CAPTURE:
+                // 通过照相获取图片
+                if (resultCode == Activity.RESULT_OK) {
+                    //TODO:保存图片到指定路径
+                }
+                break;
+
+            default:
+                super.onActivityResult(requestCode, resultCode, data);
+                break;
+        }
+    }
+
+
+    private void findView() {
         btnAddDevice = (Button) findViewById(R.id.btn_add);
         btnGenQRCode = (Button) findViewById(R.id.btn_genQR);
+        ibTakeDevicePhotos = (ImageButton) findViewById(R.id.ib_takeDevicePhoto);
         edtDeviceName = (EditText) findViewById(R.id.edt_deviceName);
         edtDeviceType = (EditText) findViewById(R.id.edt_deviceType);
         edtDevicePrincipal = (EditText) findViewById(R.id.edt_devicePrincipalId);
@@ -115,7 +152,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         edtDeviceLocDefault = (EditText) findViewById(R.id.edt_deviceLocDefault);
     }
 
-    public void addDevice() {
+    private void addDevice() {
         String name = edtDeviceName.getText().toString();
         String type = edtDeviceType.getText().toString();
         String principalId = edtDevicePrincipal.getText().toString();
@@ -147,7 +184,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         comm.commHandler.sendMessage(msg);
     }
 
-    public void genQRCode() {
+    private void genQRCode() {
         String name = edtDeviceName.getText().toString();
         String type = edtDeviceType.getText().toString();
         String principalId = edtDevicePrincipal.getText().toString();

@@ -14,16 +14,15 @@ import android.widget.Toast;
 
 import com.choco.limsclient.Activities.QRCode.ScanHelper;
 import com.choco.limsclient.CommModule.CommThread;
-import com.choco.limsclient.Util.Global;
 import com.choco.limsclient.R;
+import com.choco.limsclient.Util.Global;
+import com.choco.limsclient.Util.StringParseHelper;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-
-import com.choco.limsclient.Util.StringParseHelper;
 
 public class UpdateDeviceStatusActivity extends AppCompatActivity {
 

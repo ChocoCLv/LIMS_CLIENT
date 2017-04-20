@@ -16,8 +16,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.choco.limsclient.CommModule.CommThread;
-import com.choco.limsclient.Util.Global;
 import com.choco.limsclient.R;
+import com.choco.limsclient.Util.Global;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
                             userInfo.setUserName(username);
                             userInfo.setUserType(userType);
 
-                            if(checkPermissions()){
+                            if (checkPermissions()) {
                                 startNewActivity(userInfo.getUserType());
                             }
 

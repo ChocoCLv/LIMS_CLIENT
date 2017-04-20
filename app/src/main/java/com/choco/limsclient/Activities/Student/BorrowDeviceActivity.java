@@ -1,7 +1,6 @@
 package com.choco.limsclient.Activities.Student;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -61,18 +60,18 @@ public class BorrowDeviceActivity extends AppCompatActivity {
         JSONObject jo = new JSONObject();
         try {
             jo.put("REQUEST_TYPE", "BORROW_DEVICE");
-            jo.put("STUDENT_ID",CurrentUserInformation.getInstance().getUserId());
-            jo.put("DEVICE_ID",deviceId);
+            jo.put("STUDENT_ID", CurrentUserInformation.getInstance().getUserId());
+            jo.put("DEVICE_ID", deviceId);
             Message msg = new Message();
             msg.what = Global.FROM_STUDENT_BORROWDEVICE;
             msg.obj = jo.toString();
             CommThread.getInstance().commHandler.sendMessage(msg);
-        }catch (JSONException e){
+        } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
-    private Handler newHandler(){
+    private Handler newHandler() {
         Handler handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -94,7 +93,7 @@ public class BorrowDeviceActivity extends AppCompatActivity {
         return handler;
     }
 
-    private View.OnClickListener newOnClickListener(){
+    private View.OnClickListener newOnClickListener() {
         View.OnClickListener btnOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,7 +112,7 @@ public class BorrowDeviceActivity extends AppCompatActivity {
         return btnOnClickListener;
     }
 
-    private void setOnClickListener(View.OnClickListener btnOnClickListener){
+    private void setOnClickListener(View.OnClickListener btnOnClickListener) {
         ivDevicePic.setOnClickListener(btnOnClickListener);
         btnConfirmBorrow.setOnClickListener(btnOnClickListener);
     }
