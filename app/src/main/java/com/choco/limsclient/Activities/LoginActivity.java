@@ -32,7 +32,6 @@ public class LoginActivity extends AppCompatActivity {
     EditText edtTxtUsername;
     EditText edtTxtPwd;
     Button btnLogin;
-    CommThread comm;
     Handler handler;
     String username;
 
@@ -44,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         setTitle("LIMS-实验室管理系统");
         findView();
-        comm = CommThread.getInstance();
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,8 +83,8 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         };
-        comm.setHandler(handler);
-        new Thread(comm).start();
+        CommThread.getInstance().setHandler(handler);
+        new Thread(CommThread.getInstance()).start();
     }
 
     private void startNewActivity(String userType) {
@@ -117,7 +116,7 @@ public class LoginActivity extends AppCompatActivity {
         msg.what = Global.FROM_LOGINACTIVITY;
         msg.obj = jo.toString();
         Log.i("login", jo.toString());
-        comm.commHandler.sendMessage(msg);
+        CommThread.getInstance().commHandler.sendMessage(msg);
         Log.i("login", "send msg to comm thread");
     }
 
@@ -126,8 +125,8 @@ public class LoginActivity extends AppCompatActivity {
         edtTxtPwd = (EditText) findViewById(R.id.edtText_pwd);
         btnLogin = (Button) findViewById(R.id.btn_login);
 
-        edtTxtUsername.setText("123");
-        edtTxtPwd.setText("admin");
+        edtTxtUsername.setText("2017");
+        edtTxtPwd.setText("2017");
     }
 
     public boolean checkPermissions() {

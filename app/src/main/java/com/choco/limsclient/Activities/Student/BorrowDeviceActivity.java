@@ -29,7 +29,6 @@ public class BorrowDeviceActivity extends AppCompatActivity {
     ImageView ivDevicePic;
     Button btnConfirmBorrow;
     TextView tvDeviceInfo;
-
     String deviceInfo;
     String deviceId;
 
