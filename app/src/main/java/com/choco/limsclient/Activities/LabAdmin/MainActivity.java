@@ -7,8 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.choco.limsclient.R;
-
-import static com.choco.limsclient.Util.Global.userInfo;
+import com.choco.limsclient.Util.Global;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,9 +19,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_labadmin_main);
-        setTitle(userInfo.getUserName());
+
         findView();
         setOnClickListener(newOnClickListener());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setTitle(Global.userInfo.getUserName());
     }
 
     private View.OnClickListener newOnClickListener() {

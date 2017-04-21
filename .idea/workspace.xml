@@ -24,7 +24,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_book_experiment.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" />
@@ -2951,7 +2950,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492692754749</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="记录任务">
+      <created>1492767961932</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1492767961932</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3066,7 +3072,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="添加管理员界面" />
     <MESSAGE value="管理员添加设备" />
     <MESSAGE value="管理员：生成设备信息的二维码" />
     <MESSAGE value="添加登录成功后的界面titile显示" />
@@ -3091,7 +3096,8 @@
     <MESSAGE value="修改包名" />
     <MESSAGE value="将设备所属实验室改成设备默认的位置   并在界面中添加设备照片" />
     <MESSAGE value="调用系统相机拍照并返回" />
-    <option name="LAST_COMMIT_MESSAGE" value="调用系统相机拍照并返回" />
+    <MESSAGE value="记录任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="记录任务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
