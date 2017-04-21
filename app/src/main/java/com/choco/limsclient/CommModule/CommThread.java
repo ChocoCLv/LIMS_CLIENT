@@ -80,8 +80,11 @@ public class CommThread implements Runnable {
             commHandler = new Handler() {
                 @Override
                 public void handleMessage(Message msg) {
-                    if (msg.what == Global.FROM_LOGINACTIVITY || msg.what == Global.FROM_LABADMIN_LENDDEVICE ||
-                            msg.what == Global.FROM_LADADMIN_UPDATEDEVICEINFO || msg.what == Global.FROM_STUDENT_BORROWDEVICE) {
+                    if (msg.what == Global.FROM_LOGINACTIVITY ||
+                            msg.what == Global.FROM_LABADMIN_LENDDEVICE ||
+                            msg.what == Global.FROM_LADADMIN_UPDATEDEVICEINFO ||
+                            msg.what == Global.FROM_STUDENT_BORROWDEVICE||
+                            msg.what == Global.FROM_TEACHER_PUBLISHEEXPERIMENT) {
                         byte[] buf = msg.obj.toString().getBytes();
                         int dataLength = buf.length;
                         sndPacket = new DatagramPacket(buf, dataLength, svrAddress, svrPort);

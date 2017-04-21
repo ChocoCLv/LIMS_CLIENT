@@ -33,7 +33,7 @@ public class PickDateActivity extends AppCompatActivity {
             @Override
             public void onDateChanged(DatePicker datePicker, int i, int i1, int i2) {
                 PickDateActivity.this.year = i;
-                PickDateActivity.this.month = i1 + 1;
+                PickDateActivity.this.month = i1;
                 PickDateActivity.this.day = i2;
             }
         });
@@ -43,7 +43,7 @@ public class PickDateActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = getIntent();
                 intent.putExtra("year", String.valueOf(year));
-                intent.putExtra("month", String.valueOf(month));
+                intent.putExtra("month", String.valueOf(month+1));
                 intent.putExtra("day", String.valueOf(day));
                 PickDateActivity.this.setResult(1, intent);
                 PickDateActivity.this.finish();

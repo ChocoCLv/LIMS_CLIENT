@@ -15,6 +15,7 @@ public interface Global {
     int FROM_LABADMIN_LENDDEVICE = 0x0003;
     int FROM_LADADMIN_UPDATEDEVICEINFO = 0x0004;
     int FROM_STUDENT_BORROWDEVICE = 0x0005;
+    int FROM_TEACHER_PUBLISHEEXPERIMENT = 0x0006;
     int MAX_LENGTH = 4 * 1024;  //配置通信模块发送的最大数据包的大小
 
     String APP_DIR = File.separator + "LIMS" + File.separator;
