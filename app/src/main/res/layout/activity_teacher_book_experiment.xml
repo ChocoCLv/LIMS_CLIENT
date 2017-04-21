@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.choco.limsclient.Activities.Teacher.PublishExperimentActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实验课程："
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_experimentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实验地点："
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实验日期："
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView6"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView6"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/edt_experimentLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintLeft_toLeftOf="@+id/edt_experimentName"
+        app:layout_constraintRight_toRightOf="@+id/edt_experimentName" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束时间："
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView9"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView9"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始时间："
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView7"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView7"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/edt_experimentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        app:layout_constraintLeft_toLeftOf="@+id/edt_experimentLoc"
+        app:layout_constraintRight_toRightOf="@+id/edt_experimentLoc" />
+
+    <EditText
+        android:id="@+id/edt_experimentStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+        app:layout_constraintLeft_toLeftOf="@+id/edt_experimentDate"
+        app:layout_constraintRight_toRightOf="@+id/edt_experimentDate" />
+
+    <EditText
+        android:id="@+id/edt_experimentEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintLeft_toLeftOf="@+id/edt_experimentStartTime"
+        app:layout_constraintRight_toRightOf="@+id/edt_experimentStartTime" />
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="发布"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/edt_experimentEndTime"
+        app:layout_constraintHorizontal_bias="0.501" />
+
+</android.support.constraint.ConstraintLayout>

@@ -46,13 +46,11 @@ public class CommThread implements Runnable {
         if (commThread == null) {
             commThread = new CommThread();
         }
-        Log.i("login", "get instance");
         return commThread;
     }
 
     public void setHandler(Handler handler) {
         this.handler = handler;
-        Log.i("login", "get handler");
     }
 
     public void run() {
@@ -67,7 +65,6 @@ public class CommThread implements Runnable {
                     while (true) {
                         try {
                             socket.receive(inPacket);
-                            Log.i("login", "recv response from server");
                             String resp = new String(inPacket.getData(), inPacket.getOffset(), inPacket.getLength());
                             Message msg = new Message();
                             msg.what = Global.FROM_COMMTHREAD;
@@ -80,7 +77,6 @@ public class CommThread implements Runnable {
                 }
             }.start();
             Looper.prepare();
-            Log.i("login", "thread start");
             commHandler = new Handler() {
                 @Override
                 public void handleMessage(Message msg) {

@@ -14,7 +14,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
+    <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="将title显示更新到onResume中设置">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/PickDateActivity.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/PickTimeActivity.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/MainActivity.java" />
@@ -26,7 +26,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" />
@@ -2957,7 +2956,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492767961932</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="将title显示更新到onResume中设置">
+      <created>1492768067648</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1492768067648</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3072,7 +3078,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="管理员添加设备" />
     <MESSAGE value="管理员：生成设备信息的二维码" />
     <MESSAGE value="添加登录成功后的界面titile显示" />
     <MESSAGE value="处理扫描返回的结果" />
@@ -3097,7 +3102,8 @@
     <MESSAGE value="将设备所属实验室改成设备默认的位置   并在界面中添加设备照片" />
     <MESSAGE value="调用系统相机拍照并返回" />
     <MESSAGE value="记录任务" />
-    <option name="LAST_COMMIT_MESSAGE" value="记录任务" />
+    <MESSAGE value="将title显示更新到onResume中设置" />
+    <option name="LAST_COMMIT_MESSAGE" value="将title显示更新到onResume中设置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

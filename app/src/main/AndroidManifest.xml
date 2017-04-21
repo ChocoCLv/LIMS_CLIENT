@@ -6,7 +6,11 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
-    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -33,7 +37,11 @@
         <activity android:name=".Activities.LabAdmin.AddDeviceActivity" />
         <activity android:name=".Activities.QRCode.GenQRCodeActivity" />
         <activity android:name=".Activities.Student.BorrowDeviceActivity" />
-        <activity android:name=".Activities.LabAdmin.UpdateDeviceStatusActivity"></activity>
+        <activity android:name=".Activities.LabAdmin.UpdateDeviceStatusActivity" />
+        <activity android:name=".Activities.Teacher.MainActivity" />
+        <activity android:name=".Activities.Teacher.PublishExperimentActivity" />
+        <activity android:name=".Activities.PickTimeActivity" />
+        <activity android:name=".Activities.PickDateActivity"></activity>
     </application>
 
 </manifest>
