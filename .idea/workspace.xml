@@ -16,9 +16,7 @@
   <component name="ChangeListManager">
     <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="发送教师用户发布实验课程的请求">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishExperimentActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishExperimentActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_labadmin_add_device.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_publish_experiment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_publish_experiment.xml" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
@@ -3079,7 +3077,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492782168067</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="添加设备时  设备ID为必填字段">
+      <created>1492844845760</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1492844845760</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3194,7 +3199,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="发送的数据中含有中文时，msg.obj.toString().Length()不是实际数据的length，要使用原始的Bytes的长度来发送数据。可能是因为中文编码的字节数不一样" />
     <MESSAGE value="添加用户信息文件 保存用户的登录信息" />
     <MESSAGE value="添加学生用户借入设备界面（之前是在主界面点击后即扫描二维码）" />
     <MESSAGE value="修改命名" />
@@ -3219,7 +3223,8 @@
     <MESSAGE value="添加教师界面 以及发布实验的界面" />
     <MESSAGE value="删除日志语句" />
     <MESSAGE value="发送教师用户发布实验课程的请求" />
-    <option name="LAST_COMMIT_MESSAGE" value="发送教师用户发布实验课程的请求" />
+    <MESSAGE value="添加设备时  设备ID为必填字段" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加设备时  设备ID为必填字段" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

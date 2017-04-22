@@ -6,8 +6,11 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.choco.limsclient.Activities.PickDateActivity;
@@ -20,18 +23,25 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class PublishExperimentActivity extends AppCompatActivity {
     private static final int PICK_DATE = 1;
     private static final int PICK_START_TIME = 2;
     private static final int PICK_END_TIME = 3;
-    EditText edtExperimentName;
+    Spinner spinnerCourseName;
     EditText edtExperimentLoc;
     EditText edtExperimentDate;
+    EditText edtProjectName;
     EditText edtExperimentStartTime;
     EditText edtExperimentEndTime;
     String date;
     String startTime;
     String endTime;
+    List<String> courseList;
+    String courseName;
     Button btnPublish;
 
     @Override
@@ -44,6 +54,51 @@ public class PublishExperimentActivity extends AppCompatActivity {
         setOnClickListener(newOnClickListener());
 
         CommThread.getInstance().setHandler(newHandler());
+
+        courseList = new ArrayList<>();
+
+        /*spinnerCourseName.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                courseName = courseList.get(i);
+            }
+        });*/
+
+        spinnerCourseName.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                courseName = spinnerCourseName.getSelectedItem().toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        getCourseListFromServer();
+    }
+
+    private void getCourseListFromServer(){
+        Message msg = new Message();
+        msg.what = Global.FROM_TEACHER_PUBLISHEEXPERIMENT;
+
+        JSONObject jo = new JSONObject();
+        try{
+            jo.put("REQUEST_TYPE","GET_COURSE_LIST");
+            jo.put("TEACHER_ID",Global.userInfo.getUserId());
+
+            msg.obj = jo.toString();
+            CommThread.getInstance().commHandler.sendMessage(msg);
+        }catch(JSONException e){
+            e.printStackTrace();
+        }
+
     }
 
     private View.OnClickListener newOnClickListener() {
@@ -82,12 +137,13 @@ public class PublishExperimentActivity extends AppCompatActivity {
     }
 
     private void publishExperiment() {
-        String expName = edtExperimentName.getText().toString();
+        String projectName = edtProjectName.getText().toString();
         String expLoc = edtExperimentLoc.getText().toString();
         JSONObject jo = new JSONObject();
         try {
             jo.put("REQUEST_TYPE","PUBLISH_EXPERIMENT");
-            jo.put("EXPERIMENT_NAME", expName);
+            jo.put("COURSE_NAME", courseName);
+            jo.put("PROJECT_NAME", projectName);
             jo.put("EXPERIMENT_LOC",expLoc);
             jo.put("EXPERIMENT_DATE",date);
             jo.put("EXPERIMENT_START_TIME",startTime);
@@ -106,7 +162,8 @@ public class PublishExperimentActivity extends AppCompatActivity {
         edtExperimentDate = (EditText) findViewById(R.id.edt_experimentDate);
         edtExperimentEndTime = (EditText) findViewById(R.id.edt_experimentEndTime);
         edtExperimentLoc = (EditText) findViewById(R.id.edt_experimentLoc);
-        edtExperimentName = (EditText) findViewById(R.id.edt_experimentName);
+        edtProjectName = (EditText)findViewById(R.id.edt_projectName);
+        spinnerCourseName = (Spinner) findViewById(R.id.spinner_courseName);
         edtExperimentStartTime = (EditText) findViewById(R.id.edt_experimentStartTime);
         btnPublish = (Button) findViewById(R.id.btn_publish);
     }
@@ -120,12 +177,22 @@ public class PublishExperimentActivity extends AppCompatActivity {
                     try {
                         JSONTokener jsonParser = new JSONTokener(msg.obj.toString());
                         resp = (JSONObject) jsonParser.nextValue();
-                        String result = resp.getString("PUBLISH_RESULT");
-                        if (result.equals("SUCCESS")) {
-                            Toast.makeText(PublishExperimentActivity.this, "发布成功", Toast.LENGTH_SHORT).show();
-                        }else{
-                            Toast.makeText(PublishExperimentActivity.this, resp.getString("PUBLISH_DESCRIPTION"), Toast.LENGTH_SHORT).show();
+                        String result;
+                        if(resp.has("PUBLISH_RESULT")){
+                            result = resp.getString("PUBLISH_RESULT");
+                            if (result.equals("SUCCESS")) {
+                                Toast.makeText(PublishExperimentActivity.this, "发布成功", Toast.LENGTH_SHORT).show();
+                            }else{
+                                Toast.makeText(PublishExperimentActivity.this, resp.getString("PUBLISH_DESCRIPTION"), Toast.LENGTH_SHORT).show();
+                            }
+                        }else if(resp.has("GET_RESULT")){
+                            result = resp.getString("GET_RESULT");
+                            if(result.equals("SUCCESS")){
+                                String cl = resp.getString("COURSE_LIST");
+                                updateCourseSpinner(cl);
+                            }
                         }
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -133,6 +200,14 @@ public class PublishExperimentActivity extends AppCompatActivity {
             }
         };
         return handler;
+    }
+
+    private void updateCourseSpinner(String cl){
+        String[] courseArr =  cl.split(",");
+        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(
+                this,android.R.layout.simple_list_item_single_choice,courseArr);
+        spinnerCourseName.setAdapter(spinnerAdapter);
+        courseList = Arrays.asList(courseArr);
     }
 
     @Override

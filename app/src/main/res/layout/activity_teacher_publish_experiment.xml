@@ -17,30 +17,17 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="30dp" />
 
-    <EditText
-        android:id="@+id/edt_experimentName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
-        app:layout_constraintLeft_toRightOf="@+id/textView"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="实验地点："
-        app:layout_constraintLeft_toLeftOf="@+id/textView"
-        app:layout_constraintRight_toRightOf="@+id/textView"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_projectName"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/tv_projectName"
         android:layout_marginTop="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_projectName" />
 
     <TextView
         android:id="@+id/textView7"
@@ -50,7 +37,8 @@
         app:layout_constraintRight_toRightOf="@+id/textView6"
         app:layout_constraintLeft_toLeftOf="@+id/textView6"
         android:layout_marginTop="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <EditText
         android:id="@+id/edt_experimentLoc"
@@ -59,9 +47,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintLeft_toLeftOf="@+id/edt_experimentName"
-        app:layout_constraintRight_toRightOf="@+id/edt_experimentName" />
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/edt_projectName"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/edt_projectName" />
 
     <TextView
         android:id="@+id/textView8"
@@ -130,5 +119,43 @@
         app:layout_constraintHorizontal_bias="0.501"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner_courseName"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tv_projectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="项目名称："
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edt_projectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_projectName"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/spinner_courseName"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/spinner_courseName" />
 
 </android.support.constraint.ConstraintLayout>
