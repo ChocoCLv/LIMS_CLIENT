@@ -158,7 +158,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         String principalId = edtDevicePrincipal.getText().toString();
         String deviceId = edtDeviceId.getText().toString();
         String deviceLocDefault = edtDeviceLocDefault.getText().toString();
-        if (name.isEmpty() || type.isEmpty()) {
+        if (name.isEmpty() || type.isEmpty()||deviceId.isEmpty()) {
             Toast.makeText(this, "信息不能为空", Toast.LENGTH_SHORT).show();
             return;
         }
