@@ -14,10 +14,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="发送教师用户发布实验课程的请求">
+    <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishExperimentActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishExperimentActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_publish_experiment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_publish_experiment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,13 +77,21 @@
       <file leaf-file-name="PublishExperimentActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishExperimentActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+            <state relative-caret-position="358">
+              <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#onCreate#0;class#PublishExperimentActivity#0" expanded="false" />
+                <element signature="method#onResume#0;class#PublishExperimentActivity#0" expanded="false" />
+                <element signature="method#getCourseListFromServer#0;class#PublishExperimentActivity#0" expanded="false" />
                 <element signature="method#newOnClickListener#0;class#PublishExperimentActivity#0" expanded="false" />
+                <element signature="method#setOnClickListener#0;class#PublishExperimentActivity#0" expanded="false" />
+                <element signature="method#publishExperiment#0;class#PublishExperimentActivity#0" expanded="false" />
+                <element signature="method#findView#0;class#PublishExperimentActivity#0" expanded="false" />
+                <element signature="method#newHandler#0;class#PublishExperimentActivity#0" expanded="false" />
                 <element signature="e#6150#7595#0" expanded="true" />
                 <element signature="e#7594#7595#0" expanded="true" />
+                <element signature="method#updateCourseSpinner#0;class#PublishExperimentActivity#0" expanded="false" />
                 <element signature="e#7784#7792#0" expanded="true" />
                 <element signature="method#onActivityResult#0;class#PublishExperimentActivity#0" expanded="false" />
               </folding>
@@ -3084,7 +3091,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492844845760</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="进入该界面时向服务器请求获取该教师的课程列表  用户从SPINNER中选中课程名称">
+      <created>1492844911099</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1492844911099</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3199,7 +3213,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="添加用户信息文件 保存用户的登录信息" />
     <MESSAGE value="添加学生用户借入设备界面（之前是在主界面点击后即扫描二维码）" />
     <MESSAGE value="修改命名" />
     <MESSAGE value="添加管理员更新设备信息界面" />
@@ -3224,7 +3237,8 @@
     <MESSAGE value="删除日志语句" />
     <MESSAGE value="发送教师用户发布实验课程的请求" />
     <MESSAGE value="添加设备时  设备ID为必填字段" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加设备时  设备ID为必填字段" />
+    <MESSAGE value="进入该界面时向服务器请求获取该教师的课程列表  用户从SPINNER中选中课程名称" />
+    <option name="LAST_COMMIT_MESSAGE" value="进入该界面时向服务器请求获取该教师的课程列表  用户从SPINNER中选中课程名称" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3683,13 +3697,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishExperimentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="147" column="33" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+        <state relative-caret-position="358">
+          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#PublishExperimentActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#PublishExperimentActivity#0" expanded="false" />
+            <element signature="method#getCourseListFromServer#0;class#PublishExperimentActivity#0" expanded="false" />
             <element signature="method#newOnClickListener#0;class#PublishExperimentActivity#0" expanded="false" />
+            <element signature="method#setOnClickListener#0;class#PublishExperimentActivity#0" expanded="false" />
+            <element signature="method#publishExperiment#0;class#PublishExperimentActivity#0" expanded="false" />
+            <element signature="method#findView#0;class#PublishExperimentActivity#0" expanded="false" />
+            <element signature="method#newHandler#0;class#PublishExperimentActivity#0" expanded="false" />
             <element signature="e#6150#7595#0" expanded="true" />
             <element signature="e#7594#7595#0" expanded="true" />
+            <element signature="method#updateCourseSpinner#0;class#PublishExperimentActivity#0" expanded="false" />
             <element signature="e#7784#7792#0" expanded="true" />
             <element signature="method#onActivityResult#0;class#PublishExperimentActivity#0" expanded="false" />
           </folding>
