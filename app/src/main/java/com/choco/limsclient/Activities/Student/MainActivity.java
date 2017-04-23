@@ -11,7 +11,7 @@ import com.choco.limsclient.Util.Global;
 
 public class MainActivity extends AppCompatActivity {
     Button btnBorrowDevice;
-    Button btnCheckPorjectInfo;
+    Button btnCheckProjectInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +52,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void setOnClickListener(View.OnClickListener listener) {
         btnBorrowDevice.setOnClickListener(listener);
-        btnCheckPorjectInfo.setOnClickListener(listener);
+        btnCheckProjectInfo.setOnClickListener(listener);
     }
 
     private void findView() {
         btnBorrowDevice = (Button) findViewById(R.id.btn_borrowDevice);
-        btnCheckPorjectInfo = (Button) findViewById(R.id.btn_checkProjectInfo);
+        btnCheckProjectInfo = (Button) findViewById(R.id.btn_checkProjectInfo);
     }
 }

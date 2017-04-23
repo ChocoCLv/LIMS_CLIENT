@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
                         JSONObject resp = (JSONObject) jsonParser.nextValue();
                         String loginResult = resp.getString("LOGIN_STATUS");
                         if (loginResult.equals("SUCCESS")) {
-                            Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_LONG)
+                            Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_SHORT)
                                     .show();
                             username = resp.getString("USER_NAME");
                             String userType = resp.getString("USER_TYPE");

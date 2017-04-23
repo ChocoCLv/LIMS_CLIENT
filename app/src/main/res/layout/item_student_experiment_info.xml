@@ -3,31 +3,39 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView android:id="@+id/tv_courseName"
+    <TextView
+        android:id="@+id/tv_courseName"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="course name"
-        android:layout_height="wrap_content" />
+        android:textSize="18sp" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView android:id="@+id/tv_projectName"
+
+        <TextView
+            android:id="@+id/tv_projectName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <TextView android:id="@+id/tv_projectDateTime"
-                android:hint="projectDateTime"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_projectDateTime"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView android:id="@+id/tv_projectLoc"
-                android:hint="tprojectLoc"
+                android:layout_height="wrap_content"
+                android:hint="projectDateTime" />
+
+            <TextView
+                android:id="@+id/tv_projectLoc"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="tprojectLoc" />
         </LinearLayout>
 
     </LinearLayout>

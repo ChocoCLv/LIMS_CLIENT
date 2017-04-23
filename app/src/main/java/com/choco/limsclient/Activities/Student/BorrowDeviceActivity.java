@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.choco.limsclient.Activities.QRCode.ScanActivity;
 import com.choco.limsclient.Activities.QRCode.ScanHelper;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
@@ -44,6 +45,12 @@ public class BorrowDeviceActivity extends AppCompatActivity {
         setOnClickListener(newOnClickListener());
     }
 
+    @Override
+    public void onResume(){
+        super.onResume();
+        setTitle("设备借入");
+    }
+
     private void findView() {
         ivDevicePic = (ImageView) findViewById(R.id.iv_devicePic);
         btnConfirmBorrow = (Button) findViewById(R.id.btn_confirmBorrow);
@@ -51,8 +58,12 @@ public class BorrowDeviceActivity extends AppCompatActivity {
     }
 
     private void scanDeviceQR() {
-        ScanHelper sh = new ScanHelper();
-        sh.scanQRCode(this);
+        /*ScanHelper sh = new ScanHelper();
+        sh.scanQRCode(this);*/
+
+        IntentIntegrator intentIntegrator = new IntentIntegrator(this);
+        intentIntegrator.setCaptureActivity(ScanActivity.class);
+        intentIntegrator.initiateScan();
     }
 
     private void borrowDevice() {
@@ -126,6 +137,9 @@ public class BorrowDeviceActivity extends AppCompatActivity {
                 deviceInfo = result.getContents();
                 tvDeviceInfo.setText(deviceInfo);
                 deviceId = StringParseHelper.getDeviceIdFromDeviceInfo(deviceInfo);
+                if(deviceId==null){
+                    Toast.makeText(this, deviceInfo, Toast.LENGTH_LONG).show();
+                }
             }
         }
     }
