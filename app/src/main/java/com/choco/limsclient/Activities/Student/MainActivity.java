@@ -11,6 +11,7 @@ import com.choco.limsclient.Util.Global;
 
 public class MainActivity extends AppCompatActivity {
     Button btnBorrowDevice;
+    Button btnCheckPorjectInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,13 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_student_main);
         findView();
 
-        btnBorrowDevice.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(com.choco.limsclient.Activities.Student.MainActivity.this, BorrowDeviceActivity.class);
-                startActivity(intent);
-            }
-        });
+        setOnClickListener(newOnClickListener());
     }
 
     @Override
@@ -33,7 +28,35 @@ public class MainActivity extends AppCompatActivity {
         setTitle(Global.userInfo.getUserName());
     }
 
+    private View.OnClickListener newOnClickListener() {
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                switch (view.getId()) {
+                    case R.id.btn_borrowDevice:
+                        intent = new Intent(com.choco.limsclient.Activities.Student.MainActivity.this, BorrowDeviceActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.btn_checkProjectInfo:
+                        intent = new Intent(com.choco.limsclient.Activities.Student.MainActivity.this, CheckProjectInfoActivity.class);
+                        startActivity(intent);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        return listener;
+    }
+
+    private void setOnClickListener(View.OnClickListener listener) {
+        btnBorrowDevice.setOnClickListener(listener);
+        btnCheckPorjectInfo.setOnClickListener(listener);
+    }
+
     private void findView() {
         btnBorrowDevice = (Button) findViewById(R.id.btn_borrowDevice);
+        btnCheckPorjectInfo = (Button) findViewById(R.id.btn_checkProjectInfo);
     }
 }
