@@ -39,9 +39,10 @@
         <activity android:name=".Activities.Student.BorrowDeviceActivity" />
         <activity android:name=".Activities.LabAdmin.UpdateDeviceStatusActivity" />
         <activity android:name=".Activities.Teacher.MainActivity" />
-        <activity android:name=".Activities.Teacher.PublishExperimentActivity" />
+        <activity android:name=".Activities.Teacher.PublishProjectActivity" />
         <activity android:name=".Activities.PickTimeActivity" />
-        <activity android:name=".Activities.PickDateActivity"></activity>
+        <activity android:name=".Activities.PickDateActivity" />
+        <activity android:name=".Activities.Student.CheckProjectInfoActivity"></activity>
     </application>
 
 </manifest>
