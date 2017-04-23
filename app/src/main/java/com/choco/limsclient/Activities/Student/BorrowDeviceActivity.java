@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.choco.limsclient.Activities.QRCode.ScanHelper;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
-import com.choco.limsclient.Util.CurrentUserInformation;
+import com.choco.limsclient.Util.CurrentUserInfo;
 import com.choco.limsclient.Util.Global;
 import com.choco.limsclient.Util.StringParseHelper;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -59,7 +59,7 @@ public class BorrowDeviceActivity extends AppCompatActivity {
         JSONObject jo = new JSONObject();
         try {
             jo.put("REQUEST_TYPE", "BORROW_DEVICE");
-            jo.put("STUDENT_ID", CurrentUserInformation.getInstance().getUserId());
+            jo.put("STUDENT_ID", CurrentUserInfo.getInstance().getUserId());
             jo.put("DEVICE_ID", deviceId);
             Message msg = new Message();
             msg.what = Global.FROM_STUDENT_BORROWDEVICE;

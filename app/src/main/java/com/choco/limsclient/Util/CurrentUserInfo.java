@@ -4,23 +4,23 @@ package com.choco.limsclient.Util;
  * Created by choco on 2017/4/13.
  */
 
-public class CurrentUserInformation {
-    private static CurrentUserInformation cUI = null;
+public class CurrentUserInfo {
+    private static CurrentUserInfo cUI = null;
     private String userName;
     private String userId;
     private String userType;
     private String auth;        //登录成功后配置，作为后续与服务器交互的凭据
 
-    private CurrentUserInformation() {
+    private CurrentUserInfo() {
         userName = null;
         userId = null;
         userType = null;
         auth = null;
     }
 
-    public static CurrentUserInformation getInstance() {
+    public static CurrentUserInfo getInstance() {
         if (cUI == null) {
-            cUI = new CurrentUserInformation();
+            cUI = new CurrentUserInfo();
         }
         return cUI;
     }

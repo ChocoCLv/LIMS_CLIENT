@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent;
                 switch (view.getId()) {
                     case R.id.btn_publishExperiment:
-                        intent = new Intent(com.choco.limsclient.Activities.Teacher.MainActivity.this, PublishExperimentActivity.class);
+                        intent = new Intent(com.choco.limsclient.Activities.Teacher.MainActivity.this, PublishProjectActivity.class);
                         startActivity(intent);
                         break;
                 }

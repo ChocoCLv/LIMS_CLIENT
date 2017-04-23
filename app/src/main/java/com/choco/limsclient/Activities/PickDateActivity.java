@@ -43,7 +43,7 @@ public class PickDateActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = getIntent();
                 intent.putExtra("year", String.valueOf(year));
-                intent.putExtra("month", String.valueOf(month+1));
+                intent.putExtra("month", String.valueOf(month + 1));
                 intent.putExtra("day", String.valueOf(day));
                 PickDateActivity.this.setResult(1, intent);
                 PickDateActivity.this.finish();

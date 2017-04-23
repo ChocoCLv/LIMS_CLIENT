@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.choco.limsclient.Activities.QRCode.GenQRCodeActivity;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
-import com.choco.limsclient.Util.CurrentUserInformation;
+import com.choco.limsclient.Util.CurrentUserInfo;
 import com.choco.limsclient.Util.Global;
 
 import org.json.JSONException;
@@ -36,7 +36,7 @@ public class AddDeviceActivity extends AppCompatActivity {
     EditText edtDevicePrincipal;
     EditText edtDeviceId;
     EditText edtDeviceLocDefault;
-    CurrentUserInformation userInfo;
+    CurrentUserInfo userInfo;
     CommThread comm;
 
     @Override
@@ -46,7 +46,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         setTitle("添加新设备");
         findView();
         comm = CommThread.getInstance();
-        userInfo = CurrentUserInformation.getInstance();
+        userInfo = CurrentUserInfo.getInstance();
 
         setOnClickListener(newOnClickListener());
 
@@ -158,7 +158,7 @@ public class AddDeviceActivity extends AppCompatActivity {
         String principalId = edtDevicePrincipal.getText().toString();
         String deviceId = edtDeviceId.getText().toString();
         String deviceLocDefault = edtDeviceLocDefault.getText().toString();
-        if (name.isEmpty() || type.isEmpty()||deviceId.isEmpty()) {
+        if (name.isEmpty() || type.isEmpty() || deviceId.isEmpty()) {
             Toast.makeText(this, "信息不能为空", Toast.LENGTH_SHORT).show();
             return;
         }

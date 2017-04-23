@@ -27,16 +27,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PublishExperimentActivity extends AppCompatActivity {
+public class PublishProjectActivity extends AppCompatActivity {
     private static final int PICK_DATE = 1;
     private static final int PICK_START_TIME = 2;
     private static final int PICK_END_TIME = 3;
     Spinner spinnerCourseName;
-    EditText edtExperimentLoc;
-    EditText edtExperimentDate;
+    EditText edtProjectLoc;
+    EditText edtProjectDate;
     EditText edtProjectName;
-    EditText edtExperimentStartTime;
-    EditText edtExperimentEndTime;
+    EditText edtProjectStartTime;
+    EditText edtProjectEndTime;
     String date;
     String startTime;
     String endTime;
@@ -47,7 +47,7 @@ public class PublishExperimentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher_publish_experiment);
+        setContentView(R.layout.activity_teacher_publish_project);
 
         findView();
 
@@ -56,13 +56,6 @@ public class PublishExperimentActivity extends AppCompatActivity {
         CommThread.getInstance().setHandler(newHandler());
 
         courseList = new ArrayList<>();
-
-        /*spinnerCourseName.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                courseName = courseList.get(i);
-            }
-        });*/
 
         spinnerCourseName.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -79,23 +72,23 @@ public class PublishExperimentActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onResume(){
+    public void onResume() {
         super.onResume();
         getCourseListFromServer();
     }
 
-    private void getCourseListFromServer(){
+    private void getCourseListFromServer() {
         Message msg = new Message();
         msg.what = Global.FROM_TEACHER_PUBLISHEEXPERIMENT;
 
         JSONObject jo = new JSONObject();
-        try{
-            jo.put("REQUEST_TYPE","GET_COURSE_LIST");
-            jo.put("TEACHER_ID",Global.userInfo.getUserId());
+        try {
+            jo.put("REQUEST_TYPE", "GET_COURSE_LIST");
+            jo.put("TEACHER_ID", Global.userInfo.getUserId());
 
             msg.obj = jo.toString();
             CommThread.getInstance().commHandler.sendMessage(msg);
-        }catch(JSONException e){
+        } catch (JSONException e) {
             e.printStackTrace();
         }
 
@@ -110,16 +103,16 @@ public class PublishExperimentActivity extends AppCompatActivity {
                     case R.id.btn_publish:
                         publishExperiment();
                         break;
-                    case R.id.edt_experimentDate:
-                        intent = new Intent(PublishExperimentActivity.this, PickDateActivity.class);
+                    case R.id.edt_projectDate:
+                        intent = new Intent(PublishProjectActivity.this, PickDateActivity.class);
                         startActivityForResult(intent, PICK_DATE);
                         break;
-                    case R.id.edt_experimentStartTime:
-                        intent = new Intent(PublishExperimentActivity.this, PickTimeActivity.class);
+                    case R.id.edt_projectStartTime:
+                        intent = new Intent(PublishProjectActivity.this, PickTimeActivity.class);
                         startActivityForResult(intent, PICK_START_TIME);
                         break;
-                    case R.id.edt_experimentEndTime:
-                        intent = new Intent(PublishExperimentActivity.this, PickTimeActivity.class);
+                    case R.id.edt_projectEndTime:
+                        intent = new Intent(PublishProjectActivity.this, PickTimeActivity.class);
                         startActivityForResult(intent, PICK_END_TIME);
                         break;
                     default:
@@ -131,45 +124,45 @@ public class PublishExperimentActivity extends AppCompatActivity {
 
     private void setOnClickListener(View.OnClickListener listener) {
         btnPublish.setOnClickListener(listener);
-        edtExperimentStartTime.setOnClickListener(listener);
-        edtExperimentEndTime.setOnClickListener(listener);
-        edtExperimentDate.setOnClickListener(listener);
+        edtProjectStartTime.setOnClickListener(listener);
+        edtProjectEndTime.setOnClickListener(listener);
+        edtProjectDate.setOnClickListener(listener);
     }
 
     private void publishExperiment() {
         String projectName = edtProjectName.getText().toString();
-        String expLoc = edtExperimentLoc.getText().toString();
+        String expLoc = edtProjectLoc.getText().toString();
         JSONObject jo = new JSONObject();
         try {
-            jo.put("REQUEST_TYPE","PUBLISH_EXPERIMENT");
+            jo.put("REQUEST_TYPE", "PUBLISH_PROJECT");
             jo.put("COURSE_NAME", courseName);
             jo.put("PROJECT_NAME", projectName);
-            jo.put("EXPERIMENT_LOC",expLoc);
-            jo.put("EXPERIMENT_DATE",date);
-            jo.put("EXPERIMENT_START_TIME",startTime);
-            jo.put("EXPERIMENT_END_TIME",endTime);
-            jo.put("TEACHER_ID",Global.userInfo.getUserId());
+            jo.put("PROJECT_LOC", expLoc);
+            jo.put("PROJECT_DATE", date);
+            jo.put("PROJECT_START_TIME", startTime);
+            jo.put("PROJECT_END_TIME", endTime);
+            jo.put("TEACHER_ID", Global.userInfo.getUserId());
             Message msg = new Message();
             msg.what = Global.FROM_TEACHER_PUBLISHEEXPERIMENT;
             msg.obj = jo.toString();
             CommThread.getInstance().commHandler.sendMessage(msg);
-        }catch (JSONException e){
+        } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
     private void findView() {
-        edtExperimentDate = (EditText) findViewById(R.id.edt_experimentDate);
-        edtExperimentEndTime = (EditText) findViewById(R.id.edt_experimentEndTime);
-        edtExperimentLoc = (EditText) findViewById(R.id.edt_experimentLoc);
-        edtProjectName = (EditText)findViewById(R.id.edt_projectName);
+        edtProjectDate = (EditText) findViewById(R.id.edt_projectDate);
+        edtProjectEndTime = (EditText) findViewById(R.id.edt_projectEndTime);
+        edtProjectLoc = (EditText) findViewById(R.id.edt_projectLoc);
+        edtProjectName = (EditText) findViewById(R.id.edt_projectName);
         spinnerCourseName = (Spinner) findViewById(R.id.spinner_courseName);
-        edtExperimentStartTime = (EditText) findViewById(R.id.edt_experimentStartTime);
+        edtProjectStartTime = (EditText) findViewById(R.id.edt_projectStartTime);
         btnPublish = (Button) findViewById(R.id.btn_publish);
     }
 
-    private Handler newHandler(){
-        Handler handler = new Handler(){
+    private Handler newHandler() {
+        Handler handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
                 if (msg.what == Global.FROM_COMMTHREAD) {
@@ -178,16 +171,16 @@ public class PublishExperimentActivity extends AppCompatActivity {
                         JSONTokener jsonParser = new JSONTokener(msg.obj.toString());
                         resp = (JSONObject) jsonParser.nextValue();
                         String result;
-                        if(resp.has("PUBLISH_RESULT")){
+                        if (resp.has("PUBLISH_RESULT")) {
                             result = resp.getString("PUBLISH_RESULT");
                             if (result.equals("SUCCESS")) {
-                                Toast.makeText(PublishExperimentActivity.this, "发布成功", Toast.LENGTH_SHORT).show();
-                            }else{
-                                Toast.makeText(PublishExperimentActivity.this, resp.getString("PUBLISH_DESCRIPTION"), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(PublishProjectActivity.this, "发布成功", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(PublishProjectActivity.this, resp.getString("PUBLISH_DESCRIPTION"), Toast.LENGTH_SHORT).show();
                             }
-                        }else if(resp.has("GET_RESULT")){
+                        } else if (resp.has("GET_RESULT")) {
                             result = resp.getString("GET_RESULT");
-                            if(result.equals("SUCCESS")){
+                            if (result.equals("SUCCESS")) {
                                 String cl = resp.getString("COURSE_LIST");
                                 updateCourseSpinner(cl);
                             }
@@ -202,10 +195,10 @@ public class PublishExperimentActivity extends AppCompatActivity {
         return handler;
     }
 
-    private void updateCourseSpinner(String cl){
-        String[] courseArr =  cl.split(",");
+    private void updateCourseSpinner(String cl) {
+        String[] courseArr = cl.split(",");
         ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(
-                this,android.R.layout.simple_list_item_single_choice,courseArr);
+                this, android.R.layout.simple_list_item_single_choice, courseArr);
         spinnerCourseName.setAdapter(spinnerAdapter);
         courseList = Arrays.asList(courseArr);
     }
@@ -218,19 +211,19 @@ public class PublishExperimentActivity extends AppCompatActivity {
                 String month = intent.getStringExtra("month");
                 String day = intent.getStringExtra("day");
                 date = year + "-" + month + "-" + day;
-                edtExperimentDate.setText(date);
+                edtProjectDate.setText(date);
                 break;
             case PICK_START_TIME:
                 String shour = intent.getStringExtra("hour");
                 String smin = intent.getStringExtra("minute");
                 startTime = shour + ":" + smin;
-                edtExperimentStartTime.setText(startTime);
+                edtProjectStartTime.setText(startTime);
                 break;
             case PICK_END_TIME:
                 String ehour = intent.getStringExtra("hour");
                 String emin = intent.getStringExtra("minute");
                 endTime = ehour + ":" + emin;
-                edtExperimentEndTime.setText(endTime);
+                edtProjectEndTime.setText(endTime);
                 break;
         }
     }
