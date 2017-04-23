@@ -83,8 +83,9 @@ public class CommThread implements Runnable {
                     if (msg.what == Global.FROM_LOGINACTIVITY ||
                             msg.what == Global.FROM_LABADMIN_LENDDEVICE ||
                             msg.what == Global.FROM_LADADMIN_UPDATEDEVICEINFO ||
-                            msg.what == Global.FROM_STUDENT_BORROWDEVICE||
-                            msg.what == Global.FROM_TEACHER_PUBLISHEEXPERIMENT) {
+                            msg.what == Global.FROM_STUDENT_BORROWDEVICE ||
+                            msg.what == Global.FROM_TEACHER_PUBLISHEEXPERIMENT ||
+                            msg.what == Global.FROM_STUDENT_CHECK_PROJECT) {
                         byte[] buf = msg.obj.toString().getBytes();
                         int dataLength = buf.length;
                         sndPacket = new DatagramPacket(buf, dataLength, svrAddress, svrPort);

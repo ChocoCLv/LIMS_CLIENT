@@ -22,7 +22,6 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_publish_experiment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_publish_project.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml" />
@@ -2991,7 +2990,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492937299366</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="增加到学生查看项目列表界面的跳转">
+      <created>1492937358121</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1492937358121</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3106,7 +3112,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="添加管理员添加设备界面的设备ID条目" />
     <MESSAGE value="修改字段ID" />
     <MESSAGE value="设备管理员 向服务器发送设备信息更新请求" />
     <MESSAGE value="增加配置信息" />
@@ -3131,7 +3136,8 @@
     <MESSAGE value="更新日志" />
     <MESSAGE value="存储学生的实验项目信息" />
     <MESSAGE value="修改命名  格式化代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改命名  格式化代码" />
+    <MESSAGE value="增加到学生查看项目列表界面的跳转" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加到学生查看项目列表界面的跳转" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
