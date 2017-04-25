@@ -18,10 +18,6 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 import java.util.HashMap;
 
 public class GenQRCodeActivity extends AppCompatActivity {
-    String name;
-    String type;
-    String principalId;
-    String id;
     String qrMsg;
     ImageView qrCodeImageView;
     TextView tvDeviceInfo;
@@ -32,12 +28,7 @@ public class GenQRCodeActivity extends AppCompatActivity {
         setTitle("设备信息");
         setContentView(R.layout.activity_gen_qrcode);
         Intent intent = getIntent();
-        name = "设备名称：" + intent.getStringExtra("DEVICE_NAME") + "\n";
-        type = "设备类型：" + intent.getStringExtra("DEVICE_TYPE") + "\n";
-        principalId = "设备负责人：" + intent.getStringExtra("DEVICE_PRINCIPAL_ID") + "\n";
-        id = "设备ID：" + intent.getStringExtra("DEVICE_ID") + "\n";
-
-        qrMsg = name + type + principalId + id;
+        qrMsg = intent.getStringExtra("DEVICE_INFO");
 
         qrCodeImageView = (ImageView) findViewById(R.id.iv_qrCode);
         qrCodeImageView.setImageBitmap(encodeAsBitmap(qrMsg));
@@ -48,7 +39,7 @@ public class GenQRCodeActivity extends AppCompatActivity {
 
     public Bitmap encodeAsBitmap(String text) {
         Bitmap bitmap = null;
-        BitMatrix result = null;
+        BitMatrix result;
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
         HashMap<EncodeHintType, String> hints = new HashMap<>();
         hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");

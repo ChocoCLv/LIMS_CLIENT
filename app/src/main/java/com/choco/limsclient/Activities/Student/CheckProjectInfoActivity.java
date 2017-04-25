@@ -11,7 +11,7 @@ import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
 import com.choco.limsclient.Util.Global;
 import com.choco.limsclient.Util.ProjectInfo;
-import com.choco.limsclient.Util.StudentProjectInfoListAdapter;
+import com.choco.limsclient.Adapter.StudentProjectInfoListAdapter;
 
 import org.json.JSONException;
 import org.json.JSONObject;

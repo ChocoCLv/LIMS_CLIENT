@@ -1,5 +1,11 @@
 package com.choco.limsclient.Util;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by choco on 2017/4/17.
  */
@@ -13,5 +19,17 @@ public class StringParseHelper {
         }catch (IndexOutOfBoundsException e){
             return null;
         }
+    }
+
+    public static List<String> convertJSONArrayToList(JSONArray ja){
+        List<String> strList = new ArrayList<>();
+        for(int i = 0;i<ja.length();i++){
+            try {
+                strList.add(ja.getString(i));
+            }catch (JSONException e){
+                e.printStackTrace();
+            }
+        }
+        return strList;
     }
 }

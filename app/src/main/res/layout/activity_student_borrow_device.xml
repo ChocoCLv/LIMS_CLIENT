@@ -26,6 +26,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="45dp"
+        android:padding="20dp"
         android:text="设备信息"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"

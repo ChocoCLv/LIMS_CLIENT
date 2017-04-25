@@ -197,10 +197,16 @@ public class AddDeviceActivity extends AppCompatActivity {
             principalId = edtDevicePrincipal.getHint().toString();
         }
         Intent intent = new Intent(AddDeviceActivity.this, GenQRCodeActivity.class);
-        intent.putExtra("DEVICE_NAME", name);
-        intent.putExtra("DEVICE_TYPE", type);
-        intent.putExtra("DEVICE_PRINCIPAL_ID", principalId);
-        intent.putExtra("DEVICE_ID", id);
-        startActivity(intent);
+        JSONObject jo = new JSONObject();
+        try {
+            jo.put("设备名称", name);
+            jo.put("设备类型", type);
+            jo.put("设备负责人ID", principalId);
+            jo.put("设备ID", id);
+            intent.putExtra("DEVICE_INFO",jo.toString());
+            startActivity(intent);
+        }catch (JSONException e){
+            e.printStackTrace();
+        }
     }
 }

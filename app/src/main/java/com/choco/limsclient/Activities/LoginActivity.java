@@ -125,8 +125,8 @@ public class LoginActivity extends AppCompatActivity {
         edtTxtPwd = (EditText) findViewById(R.id.edtText_pwd);
         btnLogin = (Button) findViewById(R.id.btn_login);
 
-        edtTxtUsername.setText("2013010918015");
-        edtTxtPwd.setText("8682502101");
+        edtTxtUsername.setText("2015");
+        edtTxtPwd.setText("2015");
     }
 
     public boolean checkPermissions() {

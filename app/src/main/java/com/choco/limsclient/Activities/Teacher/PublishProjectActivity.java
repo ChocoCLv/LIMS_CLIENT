@@ -18,13 +18,15 @@ import com.choco.limsclient.Activities.PickTimeActivity;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
 import com.choco.limsclient.Util.Global;
+import com.choco.limsclient.Util.StringParseHelper;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class PublishProjectActivity extends AppCompatActivity {
@@ -181,7 +183,7 @@ public class PublishProjectActivity extends AppCompatActivity {
                         } else if (resp.has("GET_RESULT")) {
                             result = resp.getString("GET_RESULT");
                             if (result.equals("SUCCESS")) {
-                                String cl = resp.getString("COURSE_LIST");
+                                JSONArray cl = resp.getJSONArray("COURSE_ARRAY");
                                 updateCourseSpinner(cl);
                             }
                         }
@@ -195,12 +197,11 @@ public class PublishProjectActivity extends AppCompatActivity {
         return handler;
     }
 
-    private void updateCourseSpinner(String cl) {
-        String[] courseArr = cl.split(",");
-        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(
-                this, android.R.layout.simple_list_item_single_choice, courseArr);
+    private void updateCourseSpinner(JSONArray ca) {
+        courseList = StringParseHelper.convertJSONArrayToList(ca);
+        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(
+                this, android.R.layout.simple_list_item_1,courseList);
         spinnerCourseName.setAdapter(spinnerAdapter);
-        courseList = Arrays.asList(courseArr);
     }
 
     @Override
