@@ -13,6 +13,7 @@ import com.choco.limsclient.Util.Global;
 import com.choco.limsclient.Util.ProjectInfo;
 import com.choco.limsclient.Adapter.StudentProjectInfoListAdapter;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -67,7 +68,7 @@ public class CheckProjectInfoActivity extends AppCompatActivity {
                         resp = (JSONObject) jsonParser.nextValue();
                         String result = resp.getString("GET_RESULT");
                         if (result.equals("SUCCESS")) {
-                            String infoList = resp.getString("PROJECTS_INFO");
+                            JSONArray infoList = resp.getJSONArray("PROJECTS_INFO");
                             parseProjectInfoList(infoList);
                             updateListView();
                         } else {
@@ -81,13 +82,17 @@ public class CheckProjectInfoActivity extends AppCompatActivity {
         };
     }
 
-    private void parseProjectInfoList(String pil) {
-        String[] infoList = pil.split(";");
-        for (String info : infoList) {
-            String[] infoContents = info.split(",");
-            ProjectInfo pi = new ProjectInfo(infoContents[0], infoContents[1], infoContents[2],
-                    infoContents[3], infoContents[4], infoContents[5], infoContents[6]);
-            listProjectInfo.add(pi);
+    private void parseProjectInfoList(JSONArray pil) {
+
+        for (int i = 0;i<pil.length();i++) {
+            try{
+                JSONObject info = pil.getJSONObject(i);
+                ProjectInfo pi = new ProjectInfo(info);
+                listProjectInfo.add(pi);
+            }catch (JSONException e){
+                e.printStackTrace();
+            }
+
         }
     }
 

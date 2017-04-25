@@ -16,7 +16,8 @@
   <component name="ChangeListManager">
     <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,26 +49,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java">
+      <file leaf-file-name="BorrowDeviceActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+            <state relative-caret-position="607">
+              <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#5361#5362#0" expanded="true" />
+                <element signature="e#5409#5410#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BorrowDeviceActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
+      <file leaf-file-name="CheckProjectInfoActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+            <state relative-caret-position="285">
+              <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectInfo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
               <folding>
-                <element signature="e#5361#5362#0" expanded="true" />
-                <element signature="e#5409#5410#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,16 +156,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-966">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentProjectInfoListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Adapter/StudentProjectInfoListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-253">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -2046,8 +2047,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_student_check_project_info.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/StudentProjectInfoListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_student_experiment_info.xml" />
@@ -2060,6 +2059,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/GenQRCodeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_student_borrow_device.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java" />
       </list>
     </option>
   </component>
@@ -3274,7 +3275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493125356558</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="从json object中解析设备ID  并显示借出失败的原因">
+      <created>1493125407690</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1493125407690</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3389,7 +3397,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="增加设备所属实验室字段" />
     <MESSAGE value="修改文件命名" />
     <MESSAGE value="向服务器发送更新设备状态的命令" />
     <MESSAGE value="修复switch case里的break" />
@@ -3414,7 +3421,8 @@
     <MESSAGE value="学生查看项目信息  使用自定义的adapter将数据显示到listview中" />
     <MESSAGE value="测试" />
     <MESSAGE value="将硬编码改为用json封装数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="将硬编码改为用json封装数据" />
+    <MESSAGE value="从json object中解析设备ID  并显示借出失败的原因" />
+    <option name="LAST_COMMIT_MESSAGE" value="从json object中解析设备ID  并显示借出失败的原因" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3609,13 +3617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/choco/limsclient/R.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4462">
@@ -3631,13 +3632,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -3826,11 +3820,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        <state relative-caret-position="607">
+          <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
           <folding>
             <element signature="e#5361#5362#0" expanded="true" />
             <element signature="e#5409#5410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,9 @@
 package com.choco.limsclient.Util;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * Created by choco on 2017/4/23.
  */
@@ -23,6 +27,20 @@ public class ProjectInfo {
         this.projectDate = projectDate;
         this.teacherId = teacherId;
         this.projectLoc = projectLoc;
+    }
+
+    public ProjectInfo(JSONObject info){
+        try {
+            this.courseName = info.getString("COURSE_NAME");
+            this.projectName = info.getString("PROJECT_NAME");
+            this.projectStartTime = info.getString("PROJECT_START_TIME");
+            this.projectEndTime = info.getString("PROJECT_END_TIME");
+            this.projectDate = info.getString("PROJECT_DATE");
+            this.teacherId = info.getString("TEACHER_ID");
+            this.projectLoc = info.getString("PROJECT_LOC");
+        }catch (JSONException e){
+            e.printStackTrace();
+        }
     }
 
     public String get(String key) {
