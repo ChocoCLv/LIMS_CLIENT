@@ -15,21 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Msc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Sunflower.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/StudentProjectInfoListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Adapter/StudentProjectInfoListAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/GenQRCodeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/GenQRCodeActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishProjectActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishProjectActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/StringParseHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/StringParseHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_borrow_device.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_borrow_device.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_student_experiment_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_student_experiment_info.xml" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,8 +63,8 @@
       <file leaf-file-name="BorrowDeviceActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
+            <state relative-caret-position="124">
+              <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
               <folding>
                 <element signature="e#5361#5362#0" expanded="true" />
                 <element signature="e#5409#5410#0" expanded="true" />
@@ -3280,7 +3267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492954463779</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="将硬编码改为用json封装数据">
+      <created>1493125356558</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1493125356558</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3395,7 +3389,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="增加添加设备的可填写的信息 未填写设备ID则返回当前最大设备ID的自增ID" />
     <MESSAGE value="增加设备所属实验室字段" />
     <MESSAGE value="修改文件命名" />
     <MESSAGE value="向服务器发送更新设备状态的命令" />
@@ -3420,7 +3413,8 @@
     <MESSAGE value="支持学生查看项目界面发送消息" />
     <MESSAGE value="学生查看项目信息  使用自定义的adapter将数据显示到listview中" />
     <MESSAGE value="测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+    <MESSAGE value="将硬编码改为用json封装数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="将硬编码改为用json封装数据" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3832,8 +3826,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
+        <state relative-caret-position="124">
+          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
           <folding>
             <element signature="e#5361#5362#0" expanded="true" />
             <element signature="e#5409#5410#0" expanded="true" />

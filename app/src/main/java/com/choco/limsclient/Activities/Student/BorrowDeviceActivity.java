@@ -93,6 +93,8 @@ public class BorrowDeviceActivity extends AppCompatActivity {
                         String result = resp.getString("BORROW_STATUS");
                         if (result.equals("SUCCESS")) {
                             Toast.makeText(BorrowDeviceActivity.this, "借入登记成功", Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText(BorrowDeviceActivity.this, resp.getString("DESCRIPTION"), Toast.LENGTH_SHORT).show();
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -135,12 +137,20 @@ public class BorrowDeviceActivity extends AppCompatActivity {
                 Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
             } else {
                 deviceInfo = result.getContents();
-                tvDeviceInfo.setText(deviceInfo);
-                deviceId = StringParseHelper.getDeviceIdFromDeviceInfo(deviceInfo);
+                updateDeviceInfoTextView();
+                try {
+                    deviceId = new JSONObject(deviceInfo).getString("设备ID");
+                }catch (JSONException e){
+                    e.printStackTrace();
+                }
                 if(deviceId==null){
                     Toast.makeText(this, deviceInfo, Toast.LENGTH_LONG).show();
                 }
             }
         }
+    }
+
+    public void updateDeviceInfoTextView(){
+        tvDeviceInfo.setText(deviceInfo);
     }
 }
