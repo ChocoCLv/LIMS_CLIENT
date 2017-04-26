@@ -1,12 +1,14 @@
 package com.choco.limsclient.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.choco.limsclient.Activities.Student.ProjectInfoActivity;
 import com.choco.limsclient.Util.ProjectInfo;
 
 import java.util.List;
@@ -51,12 +53,24 @@ public class StudentProjectInfoListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         convertView = mInflater.inflate(layoutID, null);
+        ProjectInfo pi = projectInfoList.get(position);
         for (int i = 0; i < tags.length; i++) {
             TextView tv = (TextView) convertView.findViewById(itemIDs[i]);
-            ProjectInfo pi = projectInfoList.get(position);
             String text = pi.get(tags[i]);
             tv.setText(text);
         }
+        setOnClickListener(convertView,position);
         return convertView;
+    }
+
+    public void setOnClickListener(View convertView,final int position){
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ProjectInfoActivity.class);
+                intent.putExtra("PROJECT_INFO",projectInfoList.get(position).toString());
+                context.startActivity(intent);
+            }
+        });
     }
 }

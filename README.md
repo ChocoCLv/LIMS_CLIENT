@@ -22,5 +22,12 @@
 4. 电脑上生成二维码 由客户端扫码后引导服务器推送文件
 5. 教师用户的场地资源预约（仅注册到服务器）
 
+### 2017-4-26
+判断是否是第一次启动 http://blog.csdn.net/g475266696/article/details/7438100
+
+
+### 2017-4-23
+自定义adapter http://blog.csdn.net/listening_music/article/details/6965755
+
 ### 2017-4-20
 调用系统相机问题解决方案  http://blog.csdn.net/gao_chun/article/details/40864121

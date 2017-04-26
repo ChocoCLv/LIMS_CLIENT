@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.choco.limsclient.Activities.QRCode.GenQRCodeActivity;
+import com.choco.limsclient.Activities.UtilActivities.QRCode.GenQRCodeActivity;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
 import com.choco.limsclient.Util.CurrentUserInfo;

@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case R.id.btn_checkProjectInfo:
-                        intent = new Intent(com.choco.limsclient.Activities.Student.MainActivity.this, CheckProjectInfoActivity.class);
+                        intent = new Intent(com.choco.limsclient.Activities.Student.MainActivity.this, ProjectsInfoListActivity.class);
                         startActivity(intent);
                         break;
                     default:

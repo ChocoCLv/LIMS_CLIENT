@@ -20,7 +20,7 @@ import org.json.JSONTokener;
 
 import java.util.ArrayList;
 
-public class CheckProjectInfoActivity extends AppCompatActivity {
+public class ProjectsInfoListActivity extends AppCompatActivity {
 
     ListView lvProjectInfo;
     ArrayList<ProjectInfo> listProjectInfo;
@@ -28,7 +28,7 @@ public class CheckProjectInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_check_project_info);
+        setContentView(R.layout.activity_student_projects_info_list);
 
         listProjectInfo = new ArrayList<>();
         lvProjectInfo = (ListView) findViewById(R.id.lv_projectInfo);
@@ -72,7 +72,7 @@ public class CheckProjectInfoActivity extends AppCompatActivity {
                             parseProjectInfoList(infoList);
                             updateListView();
                         } else {
-                            Toast.makeText(CheckProjectInfoActivity.this, "获取失败", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ProjectsInfoListActivity.this, "获取失败", Toast.LENGTH_SHORT).show();
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -92,7 +92,6 @@ public class CheckProjectInfoActivity extends AppCompatActivity {
             }catch (JSONException e){
                 e.printStackTrace();
             }
-
         }
     }
 

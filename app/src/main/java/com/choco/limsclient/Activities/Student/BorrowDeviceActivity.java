@@ -11,13 +11,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.choco.limsclient.Activities.QRCode.ScanActivity;
-import com.choco.limsclient.Activities.QRCode.ScanHelper;
+import com.choco.limsclient.Activities.UtilActivities.QRCode.ScanHelper;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
 import com.choco.limsclient.Util.CurrentUserInfo;
 import com.choco.limsclient.Util.Global;
-import com.choco.limsclient.Util.StringParseHelper;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
@@ -37,11 +35,8 @@ public class BorrowDeviceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_borrow_device);
-
         findView();
-
         CommThread.getInstance().setHandler(newHandler());
-
         setOnClickListener(newOnClickListener());
     }
 
@@ -58,12 +53,8 @@ public class BorrowDeviceActivity extends AppCompatActivity {
     }
 
     private void scanDeviceQR() {
-        /*ScanHelper sh = new ScanHelper();
-        sh.scanQRCode(this);*/
-
-        IntentIntegrator intentIntegrator = new IntentIntegrator(this);
-        intentIntegrator.setCaptureActivity(ScanActivity.class);
-        intentIntegrator.initiateScan();
+        ScanHelper sh = new ScanHelper();
+        sh.scanQRCode(this);
     }
 
     private void borrowDevice() {

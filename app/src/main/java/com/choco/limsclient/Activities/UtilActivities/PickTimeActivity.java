@@ -1,4 +1,4 @@
-package com.choco.limsclient.Activities;
+package com.choco.limsclient.Activities.UtilActivities;
 
 
 import android.content.Intent;

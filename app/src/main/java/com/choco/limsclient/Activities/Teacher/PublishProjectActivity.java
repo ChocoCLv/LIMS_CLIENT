@@ -13,12 +13,12 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.choco.limsclient.Activities.PickDateActivity;
-import com.choco.limsclient.Activities.PickTimeActivity;
+import com.choco.limsclient.Activities.UtilActivities.PickDateActivity;
+import com.choco.limsclient.Activities.UtilActivities.PickTimeActivity;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
 import com.choco.limsclient.Util.Global;
-import com.choco.limsclient.Util.StringParseHelper;
+import com.choco.limsclient.Util.Helper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,7 +26,6 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class PublishProjectActivity extends AppCompatActivity {
@@ -198,7 +197,7 @@ public class PublishProjectActivity extends AppCompatActivity {
     }
 
     private void updateCourseSpinner(JSONArray ca) {
-        courseList = StringParseHelper.convertJSONArrayToList(ca);
+        courseList = Helper.convertJSONArrayToList(ca);
         ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_list_item_1,courseList);
         spinnerCourseName.setAdapter(spinnerAdapter);

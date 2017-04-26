@@ -17,7 +17,11 @@ public interface Global {
     int FROM_STUDENT_BORROWDEVICE = 0x0005;
     int FROM_TEACHER_PUBLISHEEXPERIMENT = 0x0006;
     int FROM_STUDENT_CHECK_PROJECT = 0x0007;
+    int FROM_STUDENT_PROJECT_INFO = 0x0010;
     int MAX_LENGTH = 4 * 1024;  //配置通信模块发送的最大数据包的大小
+
+    int FACE_REGISTER = 0x0008;
+    int FACE_VERIFY = 0x0009;
 
     String APP_DIR = File.separator + "LIMS" + File.separator;
     String DEVICE_PHOTOS = "device photos" + File.separator;

@@ -12,11 +12,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.choco.limsclient.Activities.QRCode.ScanHelper;
+import com.choco.limsclient.Activities.UtilActivities.QRCode.ScanHelper;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
 import com.choco.limsclient.Util.Global;
-import com.choco.limsclient.Util.StringParseHelper;
+import com.choco.limsclient.Util.Helper;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
@@ -109,7 +109,7 @@ public class UpdateDeviceStatusActivity extends AppCompatActivity {
             } else {
                 deviceInfo = result.getContents();
                 tvDeviceInfo.setText(deviceInfo);
-                deviceId = StringParseHelper.getDeviceIdFromDeviceInfo(deviceInfo);
+                deviceId = Helper.getDeviceIdFromDeviceInfo(deviceInfo);
             }
         }
     }

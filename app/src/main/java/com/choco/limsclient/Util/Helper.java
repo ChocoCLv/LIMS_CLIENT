@@ -1,16 +1,20 @@
 package com.choco.limsclient.Util;
 
+import android.content.Context;
+import android.content.Intent;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
  * Created by choco on 2017/4/17.
  */
 
-public class StringParseHelper {
+public class Helper {
     public static String getDeviceIdFromDeviceInfo(String deviceInfo) {
         String[] res = deviceInfo.split("\\n");
         try {
@@ -32,4 +36,6 @@ public class StringParseHelper {
         }
         return strList;
     }
+
+
 }

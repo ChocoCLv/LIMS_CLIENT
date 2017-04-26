@@ -1,4 +1,4 @@
-package com.choco.limsclient.Activities.QRCode;
+package com.choco.limsclient.Activities.UtilActivities.QRCode;
 
 import android.os.Bundle;
 
