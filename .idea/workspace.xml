@@ -16,8 +16,6 @@
   <component name="ChangeListManager">
     <list default="true" id="640d7538-8240-4908-abba-77daaa9d39da" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/ProjectInfoActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/UtilActivities/FaceRecognitionActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_face_recognition.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_project_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
@@ -2756,13 +2754,6 @@
       <option name="presentableId" value="Default" />
       <updated>1488274168664</updated>
     </task>
-    <task id="LOCAL-00005" summary="定制zxing">
-      <created>1491555024647</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1491555024647</updated>
-    </task>
     <task id="LOCAL-00006" summary="定制zxing">
       <created>1491555185055</created>
       <option name="number" value="00006" />
@@ -3099,7 +3090,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493213420449</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="添加人脸识别界面 根据intent的信息判断是注册还是识别 并返回结果">
+      <created>1493213473432</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1493213473432</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3214,7 +3212,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="格式化代码" />
     <MESSAGE value="提取字符串处理方法 从设备信息中提取某些数据" />
     <MESSAGE value="修改包名" />
     <MESSAGE value="将设备所属实验室改成设备默认的位置   并在界面中添加设备照片" />
@@ -3239,7 +3236,8 @@
     <MESSAGE value="改名" />
     <MESSAGE value="用户第一次登录成功 转向人脸注册界面" />
     <MESSAGE value="添加JSONObject的构造函数 以及toString方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加JSONObject的构造函数 以及toString方法" />
+    <MESSAGE value="添加人脸识别界面 根据intent的信息判断是注册还是识别 并返回结果" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加人脸识别界面 根据intent的信息判断是注册还是识别 并返回结果" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

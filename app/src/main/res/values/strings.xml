@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">LimsClient</string>
     <string name="title_activity_scan">ScanActivity</string>
+    <string name="xunfei_appid">585d17cb</string>
 </resources>
