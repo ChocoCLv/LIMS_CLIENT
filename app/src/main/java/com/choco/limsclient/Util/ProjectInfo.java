@@ -18,6 +18,7 @@ public class ProjectInfo {
     private String teacherId;
     private String teacherName;
     private String projectLoc;
+    private JSONObject info;
 
     public ProjectInfo(String courseName, String projectName, String teacherId, String projectDate, String projectStartTime, String projectEndTime, String projectLoc) {
         this.courseName = courseName;
@@ -29,7 +30,22 @@ public class ProjectInfo {
         this.projectLoc = projectLoc;
     }
 
+    public ProjectInfo(String info){
+        try {
+            JSONObject jo = new JSONObject(info);
+            this.info = jo;
+            parseInfoFromJSONObject(this.info);
+        }catch (JSONException e){
+            e.printStackTrace();
+        }
+    }
+
     public ProjectInfo(JSONObject info){
+        this.info = info;
+        parseInfoFromJSONObject(this.info);
+    }
+
+    private void parseInfoFromJSONObject(JSONObject info){
         try {
             this.courseName = info.getString("COURSE_NAME");
             this.projectName = info.getString("PROJECT_NAME");
@@ -41,6 +57,10 @@ public class ProjectInfo {
         }catch (JSONException e){
             e.printStackTrace();
         }
+    }
+
+    public String toString(){
+        return info.toString();
     }
 
     public String get(String key) {

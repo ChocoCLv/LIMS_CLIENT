@@ -20,9 +20,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_face_recognition.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_project_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
@@ -86,8 +83,8 @@
       <file leaf-file-name="Global.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="99">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -2760,13 +2757,6 @@
       <option name="presentableId" value="Default" />
       <updated>1488274168664</updated>
     </task>
-    <task id="LOCAL-00003" summary="增加学生的设备借入扫码功能">
-      <created>1491048269255</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1491048269255</updated>
-    </task>
     <task id="LOCAL-00004" summary="配置zxing为二维码扫描">
       <created>1491210650374</created>
       <option name="number" value="00004" />
@@ -3103,7 +3093,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493213203389</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="用户第一次登录成功 转向人脸注册界面">
+      <created>1493213319532</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1493213319532</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3218,7 +3215,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="修复switch case里的break" />
     <MESSAGE value="在发送数据的判断里增加来自UpdateDeviceStatus的选项" />
     <MESSAGE value="格式化代码" />
     <MESSAGE value="提取字符串处理方法 从设备信息中提取某些数据" />
@@ -3243,7 +3239,8 @@
     <MESSAGE value="从json object中解析设备ID  并显示借出失败的原因" />
     <MESSAGE value="改为jsonarray封装数据" />
     <MESSAGE value="改名" />
-    <option name="LAST_COMMIT_MESSAGE" value="改名" />
+    <MESSAGE value="用户第一次登录成功 转向人脸注册界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户第一次登录成功 转向人脸注册界面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3709,8 +3706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="99">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
           <folding />
         </state>
       </provider>
