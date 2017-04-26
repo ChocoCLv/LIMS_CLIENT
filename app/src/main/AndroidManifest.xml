@@ -6,12 +6,16 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -28,21 +32,23 @@
         </activity>
         <activity android:name=".Activities.Student.MainActivity" />
         <activity
-            android:name=".Activities.QRCode.ScanActivity"
+            android:name=".Activities.UtilActivities.QRCode.ScanActivity"
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".Activities.LabAdmin.MainActivity" />
         <activity android:name=".Activities.LabAdmin.LendDeviceActivity" />
         <activity android:name=".Activities.LabAdmin.AddDeviceActivity" />
-        <activity android:name=".Activities.QRCode.GenQRCodeActivity" />
+        <activity android:name=".Activities.UtilActivities.QRCode.GenQRCodeActivity" />
         <activity android:name=".Activities.Student.BorrowDeviceActivity" />
         <activity android:name=".Activities.LabAdmin.UpdateDeviceStatusActivity" />
         <activity android:name=".Activities.Teacher.MainActivity" />
         <activity android:name=".Activities.Teacher.PublishProjectActivity" />
-        <activity android:name=".Activities.PickTimeActivity" />
-        <activity android:name=".Activities.PickDateActivity" />
-        <activity android:name=".Activities.Student.CheckProjectInfoActivity"></activity>
+        <activity android:name=".Activities.UtilActivities.PickTimeActivity" />
+        <activity android:name=".Activities.UtilActivities.PickDateActivity" />
+        <activity android:name=".Activities.Student.ProjectsInfoListActivity" />
+        <activity android:name=".Activities.Student.ProjectInfoActivity" />
+        <activity android:name=".Activities.UtilActivities.FaceRecognitionActivity"></activity>
     </application>
 
 </manifest>

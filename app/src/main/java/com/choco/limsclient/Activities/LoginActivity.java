@@ -1,6 +1,8 @@
 package com.choco.limsclient.Activities;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -15,9 +17,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.choco.limsclient.Activities.UtilActivities.FaceRecognitionActivity;
 import com.choco.limsclient.CommModule.CommThread;
 import com.choco.limsclient.R;
 import com.choco.limsclient.Util.Global;
+import com.choco.limsclient.Util.Helper;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,7 +32,7 @@ import java.util.HashMap;
 import static com.choco.limsclient.Util.Global.userInfo;
 
 public class LoginActivity extends AppCompatActivity {
-
+    private final int FACE_REGISTER = 1;
     EditText edtTxtUsername;
     EditText edtTxtPwd;
     Button btnLogin;
@@ -68,7 +72,11 @@ public class LoginActivity extends AppCompatActivity {
                             userInfo.setUserName(username);
                             userInfo.setUserType(userType);
 
-                            if (checkPermissions()) {
+                            if(isFirstIn()){
+                                Intent intent = new Intent(LoginActivity.this, FaceRecognitionActivity.class);
+                                intent.putExtra("REQUEST_TYPE",Global.FACE_REGISTER);
+                                startActivityForResult(intent,FACE_REGISTER);
+                            }else if (checkPermissions()) {
                                 startNewActivity(userInfo.getUserType());
                             }
 
@@ -87,18 +95,15 @@ public class LoginActivity extends AppCompatActivity {
         new Thread(CommThread.getInstance()).start();
     }
 
-    private void startNewActivity(String userType) {
-        HashMap<String, String> userTypeToActivity = new HashMap<>();
-        userTypeToActivity.put("STUDENT", "com.choco.limsclient.Activities.Student.MainActivity");
-        userTypeToActivity.put("TEACHER", "com.choco.limsclient.Activities.Teacher.MainActivity");
-        userTypeToActivity.put("LAB_ADMIN", "com.choco.limsclient.Activities.LabAdmin.MainActivity");
-        try {
-            Intent intent = new Intent(LoginActivity.this, Class.forName(userTypeToActivity.get(userType)));
-            startActivity(intent);
-            this.finish();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+    private boolean isFirstIn(){
+        SharedPreferences pref = this.getSharedPreferences(getString(R.string.app_name),0);
+        boolean isCurrentUserFirstIn = pref.getBoolean(userInfo.getUserId(),true);
+        if(isCurrentUserFirstIn) {
+            SharedPreferences.Editor editor = pref.edit();
+            editor.putBoolean(userInfo.getUserId(), false);
+            editor.commit();
         }
+        return isCurrentUserFirstIn;
     }
 
     private void login() {
@@ -125,8 +130,8 @@ public class LoginActivity extends AppCompatActivity {
         edtTxtPwd = (EditText) findViewById(R.id.edtText_pwd);
         btnLogin = (Button) findViewById(R.id.btn_login);
 
-        edtTxtUsername.setText("2015");
-        edtTxtPwd.setText("2015");
+        edtTxtUsername.setText("2013010918015");
+        edtTxtPwd.setText("8682502101");
     }
 
     public boolean checkPermissions() {
@@ -143,6 +148,32 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
         return true;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode,int resultCode,Intent intent){
+        if(requestCode == FACE_REGISTER&&resultCode==RESULT_OK){
+            String result = intent.getStringExtra("REGISTER_RESULT");
+            if(result.equals("SUCCESS")){
+                Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
+            }else if(result.equals("FAILED")){
+                Toast.makeText(this, "注册失败", Toast.LENGTH_SHORT).show();
+            }
+            startNewActivity(userInfo.getUserType());
+        }
+    }
+
+    public void startNewActivity(String userType) {
+        HashMap<String, String> userTypeToActivity = new HashMap<>();
+        userTypeToActivity.put("STUDENT", "com.choco.limsclient.Activities.Student.MainActivity");
+        userTypeToActivity.put("TEACHER", "com.choco.limsclient.Activities.Teacher.MainActivity");
+        userTypeToActivity.put("LAB_ADMIN", "com.choco.limsclient.Activities.LabAdmin.MainActivity");
+        try {
+            Intent intent = new Intent(this,Class.forName(userTypeToActivity.get(userType)));
+            startActivity(intent);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

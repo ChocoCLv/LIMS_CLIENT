@@ -19,31 +19,11 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/UtilActivities/FaceRecognitionActivity.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_face_recognition.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_project_info.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/PickDateActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/UtilActivities/PickDateActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/PickTimeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/UtilActivities/PickTimeActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/GenQRCodeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/UtilActivities/QRCode/GenQRCodeActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/UtilActivities/QRCode/ScanActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/QRCode/ScanHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/UtilActivities/QRCode/ScanHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/CheckProjectInfoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/ProjectsInfoListActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/StringParseHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Helper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_check_project_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_projects_info_list.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/AddDeviceActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceStatusActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LabAdmin/UpdateDeviceStatusActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/BorrowDeviceActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Student/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishProjectActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Activities/Teacher/PublishProjectActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Adapter/StudentProjectInfoListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Adapter/StudentProjectInfoListAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/CommModule/CommThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/Global.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/choco/limsclient/Util/ProjectInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gen_qrcode.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_gen_qrcode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pick_date.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pick_date.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pick_time.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pick_time.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <ignored path="LIMS_CLIENT.iws" />
@@ -2780,13 +2760,6 @@
       <option name="presentableId" value="Default" />
       <updated>1488274168664</updated>
     </task>
-    <task id="LOCAL-00002" summary="增加网络权限">
-      <created>1488770347039</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1488770347039</updated>
-    </task>
     <task id="LOCAL-00003" summary="增加学生的设备借入扫码功能">
       <created>1491048269255</created>
       <option name="number" value="00003" />
@@ -3123,7 +3096,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493126699639</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="改名">
+      <created>1493213203389</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1493213203389</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3238,7 +3218,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="向服务器发送更新设备状态的命令" />
     <MESSAGE value="修复switch case里的break" />
     <MESSAGE value="在发送数据的判断里增加来自UpdateDeviceStatus的选项" />
     <MESSAGE value="格式化代码" />
@@ -3263,7 +3242,8 @@
     <MESSAGE value="将硬编码改为用json封装数据" />
     <MESSAGE value="从json object中解析设备ID  并显示借出失败的原因" />
     <MESSAGE value="改为jsonarray封装数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="改为jsonarray封装数据" />
+    <MESSAGE value="改名" />
+    <option name="LAST_COMMIT_MESSAGE" value="改名" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
