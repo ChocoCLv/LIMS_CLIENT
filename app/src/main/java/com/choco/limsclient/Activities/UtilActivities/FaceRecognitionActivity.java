@@ -73,10 +73,9 @@ public class FaceRecognitionActivity extends AppCompatActivity implements View.O
                     verify(object);
                 }
             } catch (UnsupportedEncodingException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (JSONException e) {
-                // TODO: handle exception
+                e.printStackTrace();
             }
         }
 

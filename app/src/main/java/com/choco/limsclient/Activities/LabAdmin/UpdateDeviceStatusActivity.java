@@ -109,7 +109,11 @@ public class UpdateDeviceStatusActivity extends AppCompatActivity {
             } else {
                 deviceInfo = result.getContents();
                 tvDeviceInfo.setText(deviceInfo);
-                deviceId = Helper.getDeviceIdFromDeviceInfo(deviceInfo);
+                try {
+                    deviceId = new JSONObject(deviceInfo).getString("设备ID");
+                }catch (JSONException e){
+                    e.printStackTrace();
+                }
             }
         }
     }

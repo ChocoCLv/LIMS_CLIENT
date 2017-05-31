@@ -21,6 +21,7 @@ import com.iflytek.cloud.SpeechUtility;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONTokener;
 
 import static com.choco.limsclient.Util.Global.FROM_STUDENT_PROJECT_INFO;
 import static com.choco.limsclient.Util.Global.userInfo;
@@ -74,7 +75,7 @@ public class ProjectInfoActivity extends AppCompatActivity implements View.OnCli
         if(requestCode == FACE_VERIFY&&resultCode==RESULT_OK){
             String result = intent.getStringExtra("VERIFY_RESULT");
             if(result.equals("SUCCESS")){
-                showTip("验证通过");
+                //showTip("验证通过");
                 signIn();
             }else if(result.equals("FAILED")){
                 showTip("验证失败");
@@ -105,7 +106,19 @@ public class ProjectInfoActivity extends AppCompatActivity implements View.OnCli
             @Override
             public void handleMessage(Message msg) {
                 if(msg.what == Global.FROM_COMMTHREAD){
-
+                    JSONObject resp;
+                    try {
+                        JSONTokener jsonParser = new JSONTokener(msg.obj.toString());
+                        resp = (JSONObject) jsonParser.nextValue();
+                        String result = resp.getString("SIGNIN_RESULT");
+                        if (result.equals("SUCCESS")) {
+                            Toast.makeText(ProjectInfoActivity.this, "签到成功", Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText(ProjectInfoActivity.this, resp.getString("SIGNIN_DESCRIPTION"), Toast.LENGTH_SHORT).show();
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         };

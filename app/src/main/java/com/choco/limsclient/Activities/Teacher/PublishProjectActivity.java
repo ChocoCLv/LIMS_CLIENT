@@ -75,6 +75,7 @@ public class PublishProjectActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
+        setTitle("发布实验项目");
         getCourseListFromServer();
     }
 

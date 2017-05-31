@@ -7,7 +7,7 @@ import java.io.File;
  */
 
 public interface Global {
-    String svrAddr = "192.168.1.105";
+    String svrAddr = "192.168.1.222";
     int svrPort = 2222;
     int localPort = 3333;
     int FROM_LOGINACTIVITY = 0X001;

@@ -28,8 +28,11 @@ public class BorrowDeviceActivity extends AppCompatActivity {
     ImageView ivDevicePic;
     Button btnConfirmBorrow;
     TextView tvDeviceInfo;
-    String deviceInfo;
+    JSONObject deviceInfo;
     String deviceId;
+    String deviceType;
+    String deviceIp;
+    final String computer = "电脑";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +66,11 @@ public class BorrowDeviceActivity extends AppCompatActivity {
             jo.put("REQUEST_TYPE", "BORROW_DEVICE");
             jo.put("STUDENT_ID", CurrentUserInfo.getInstance().getUserId());
             jo.put("DEVICE_ID", deviceId);
+            jo.put("DEVICE_TYPE",deviceType);
+            if(computer.equals(deviceType)){
+                deviceIp = deviceInfo.getString("DEVICE_IP");
+                jo.put("DEVICE_IP",deviceIp);
+            }
             Message msg = new Message();
             msg.what = Global.FROM_STUDENT_BORROWDEVICE;
             msg.obj = jo.toString();
@@ -70,6 +78,7 @@ public class BorrowDeviceActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
     }
 
     private Handler newHandler() {
@@ -127,21 +136,23 @@ public class BorrowDeviceActivity extends AppCompatActivity {
             if (result.getContents() == null) {
                 Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
             } else {
-                deviceInfo = result.getContents();
-                updateDeviceInfoTextView();
                 try {
-                    deviceId = new JSONObject(deviceInfo).getString("设备ID");
+                    deviceInfo = new JSONObject(result.getContents());
+                    updateDeviceInfoTextView();
+                    deviceId = deviceInfo.getString("DEVICE_ID");
+                    deviceType = deviceInfo.getString("DEVICE_TYPE");
+
                 }catch (JSONException e){
                     e.printStackTrace();
                 }
                 if(deviceId==null){
-                    Toast.makeText(this, deviceInfo, Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, deviceInfo.toString(), Toast.LENGTH_LONG).show();
                 }
             }
         }
     }
 
     public void updateDeviceInfoTextView(){
-        tvDeviceInfo.setText(deviceInfo);
+        tvDeviceInfo.setText(deviceInfo.toString());
     }
 }

@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                                 AddDeviceActivity.class);
                         startActivity(intent);
                         break;
-                    case R.id.btn_lendDevice:
+                    case R.id.btn_retrieveDevice:
                         intent = new Intent(com.choco.limsclient.Activities.LabAdmin.MainActivity.this,
                                 LendDeviceActivity.class);
                         startActivity(intent);
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void findView() {
-        btnLendDevice = (Button) findViewById(R.id.btn_lendDevice);
+        btnLendDevice = (Button) findViewById(R.id.btn_retrieveDevice);
         btnAddDevice = (Button) findViewById(R.id.btn_addDevice);
         btnUpdateDeviceInfo = (Button) findViewById(R.id.btn_updateDeviceInfo);
     }

@@ -15,15 +15,6 @@ import java.util.List;
  */
 
 public class Helper {
-    public static String getDeviceIdFromDeviceInfo(String deviceInfo) {
-        String[] res = deviceInfo.split("\\n");
-        try {
-            String deviceId = res[3].split("：")[1];
-            return deviceId;
-        }catch (IndexOutOfBoundsException e){
-            return null;
-        }
-    }
 
     public static List<String> convertJSONArrayToList(JSONArray ja){
         List<String> strList = new ArrayList<>();
